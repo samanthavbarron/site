@@ -7,12 +7,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt-get install texlive-latex-base texlive-latex-extra texlive
-      - run: echo $(which pdflatex)
-      - run: echo $PATH
-      - run: PATH=$PATH:/usr/bin
-      - run: echo $PATH
-      - uses: docker://pandoc/core:2.9
+      - uses: docker://pandoc/latex
         with:
           args: >-
             --standalone
