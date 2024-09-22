@@ -23,7 +23,7 @@ I don't think I have the answers to solve these problems, though I have [some id
 - How does the (de-)centralized nature of a platform influence its users and content?
 - What would digital autonomy look like for your community? [How would you prioritize content in your community?](https://github.com/bluesky-social/feed-generator)
 - What would content in your community look like if you were not beholden to the moderation rules and incentives of the algorithms that platforms like Instagram enforce?
-- Who in your community would bear the responsibility of hosting/maintaining this technology, and how would they communicate its potential and use to their community? How could they empower their community with [[Phones Bad#Technological literacy is centralized (social problem)|technological literacy]]?
+- Who in your community would bear the responsibility of hosting/maintaining this technology, and how would they communicate its potential and use to their community? How could they empower their community with [technological literacy](/posts/phones-bad#technological-literacy-is-centralized-social-problem)?
 
 # Related
 - [Indie Web](https://indieweb.org/)

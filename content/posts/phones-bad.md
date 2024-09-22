@@ -35,7 +35,7 @@ Most people don't know how to use technology in a technical way. The technology 
 
 # Where do we go from here?
 
-**The technical problem**: Of these problems, I think is the easiest to solve of these (*I said easiest, not easy*). There are a lot of efforts to decentralize social media, e.g. [Bluesky](https://bsky.app/), [Mastodon](https://joinmastodon.org/), [Matrix](https://matrix.org/), etc. For people aware of these things, we should make the switch ourselves, and encourage our less tech-savvy friends to do the same. [[about|Follow me on these platforms!]]
+**The technical problem**: Of these problems, I think is the easiest to solve of these (*I said easiest, not easy*). There are a lot of efforts to decentralize social media, e.g. [Bluesky](https://bsky.app/), [Mastodon](https://joinmastodon.org/), [Matrix](https://matrix.org/), etc. For people aware of these things, we should make the switch ourselves, and encourage our less tech-savvy friends to do the same.
 
 **The political problem**: I think the manufacturing aspect of this is much more difficult to solve, and is probably related to the geopolitics of chips. On this, I really don't know. If I had to guess, this is a century-scale problem.
 
@@ -45,7 +45,7 @@ Most people don't know how to use technology in a technical way. The technology 
 
 # So what can *You and I* do?
 If you happen to have massive amounts of geopolitical power, perhaps reconsider. For the rest of us:
-- Encourage people to [[about|use better platforms]].
+- Encourage people to use better platforms.
 - Encourage people to [learn to code](https://www.codecademy.com/).
 
 If nothing else, try turning **all** your technology off for a day, then come back and read this again.

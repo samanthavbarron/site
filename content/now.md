@@ -6,13 +6,13 @@
 - Practice Mindfulness
 
 # Doing
-- [[Museums & Galleries]]
+- Museums & Galleries
 - Make new friends
 - Work work work
 
 # Reading
-- [[The Handover by David Runciman]]
-- [[Reader, Come Home by Maryanne Wolf]]
+- The Handover by David Runciman
+- Reader, Come Home by Maryanne Wolf
 
 # Watching
 - [Letterboxd](https://letterboxd.com/samantha_wiki/)
