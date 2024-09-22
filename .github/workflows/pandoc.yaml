@@ -7,12 +7,11 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt-get install texlive-latex-base texlive-latex-extra
+      - run: sudo apt-get install texlive-latex-base texlive-latex-extra texlive
       - run: echo $(which pdflatex)
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
             --standalone
-            --pdf-engine="/usr/bin/pdflatex"
             --output=samantha_barron_cv.pdf
             ./content/cv/cv.md
