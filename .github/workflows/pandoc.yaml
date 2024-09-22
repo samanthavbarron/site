@@ -13,3 +13,7 @@ jobs:
             --standalone
             --output=samantha_barron_cv.pdf
             ./content/cv/cv.md
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./samantha_barron_cv.pdf
