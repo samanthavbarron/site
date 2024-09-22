@@ -65,7 +65,7 @@ jobs:
           args: >-
             --standalone
             --output=./public/cv/samantha_barron_cv.pdf
-            ./content/cv/cv.md
+            ./public/cv/cv/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
