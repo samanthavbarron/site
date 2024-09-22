@@ -23,7 +23,7 @@ I currently work at IBM Quantum, where I develop and improve error mitigation an
 
 ## Awards
 
-* Spring 2020: Inducted into Sigma Pi Sigma (ΣΠΣ), American Institute of Physics
+* Spring 2020: Inducted into Sigma Pi Sigma, American Institute of Physics
 * Spring 2019: Clayton D. Williams Fellowship in Theoretical Physics, Dept. of Physics Virginia Tech
 * Spring 2016: Ted L. Simons Memorial Award in Physics, Dept. of Physics and Astr. University of Georgia
 * Summer 2015: Dean’s List, University of Georgia
