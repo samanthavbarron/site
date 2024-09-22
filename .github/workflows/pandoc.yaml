@@ -13,6 +13,6 @@ jobs:
         with:
           args: >-
             --standalone
-            --pdf-engine=/usr/bin/pdflatex
+            --pdf-engine="/usr/bin/pdflatex"
             --output=samantha_barron_cv.pdf
             ./content/cv/cv.md
