@@ -41,8 +41,8 @@ menu:
 
 params:
   homeInfoParams:
-    Title: "Hi there ✨"
-    Content: I'm Samantha! I want to engage with technology in a more intentioned way. This site might be a good route to that.
+    Title: "Hi there, I'm Samantha ✨"
+    Content: This is my blog. All thoughts my own.
 
   socialIcons:
     - name: github
