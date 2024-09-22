@@ -1,0 +1,75 @@
+baseURL: https://samantha.wiki/
+languageCode: en-us
+title: samantha.wiki
+theme: PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+menu:
+  main:
+    - name: About
+      url: about/
+      weight: 10
+    - name: CV
+      url: cv/
+      weight: 10
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 10
+
+params:
+  homeInfoParams:
+    Title: "Hi there ✨"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: github
+      url: https://github.com/samanthavbarron
+    - name: rss
+      url: index.xml
+    - name: email
+      url: mailto:sam@sambarron.me
+    - name: googlescholar
+      url: https://scholar.google.com/citations?user=2ak_k_UAAAAJ
+    - name: instagram
+      url: https://instagram.com/samantha.wiki
+    - name: linkedin
+      url: https://www.linkedin.com/in/svbarron/
+
+  DateFormat: "January 2, 2006"
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
