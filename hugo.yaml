@@ -42,7 +42,7 @@ menu:
 params:
   homeInfoParams:
     Title: "Hi there ✨"
-    Content: Welcome to my blog
+    Content: I'm Samantha! I want to engage with technology in a more intentioned way. This site might be a good route to that.
 
   socialIcons:
     - name: github
