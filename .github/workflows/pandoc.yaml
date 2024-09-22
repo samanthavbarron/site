@@ -10,6 +10,8 @@ jobs:
       - run: sudo apt-get install texlive-latex-base texlive-latex-extra texlive
       - run: echo $(which pdflatex)
       - run: echo $PATH
+      - run: PATH=$PATH:/usr/bin
+      - run: echo $PATH
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
