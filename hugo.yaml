@@ -41,8 +41,8 @@ menu:
 
 params:
   homeInfoParams:
-    Title: "Hi there, I'm Samantha Barron. ✨"
-    Content: This is my blog where I ramble. I work in quantum computing at IBM. I make the computer go beep boop. All thoughts my own.
+    Title: "Hi there! I'm Samantha Barron"
+    Content: I'm Samantha Barron, and this is my blog. I live in NYC and I work at IBM Quantum. I make the computer go beep boop. All thoughts my own.
 
   socialIcons:
     - name: github
