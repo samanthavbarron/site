@@ -1,0 +1,14 @@
+name: Pandoc CV
+
+on: push
+
+jobs:
+  make_cv_pdf:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-
+            --standalone
+            --output=samantha_barron_cv.pdf
+            ./content/cv/cv.md
