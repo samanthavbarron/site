@@ -60,6 +60,12 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - uses: docker://pandoc/latex
+        with:
+          args: >-
+            --standalone
+            --output=./content/cv/samantha_barron_cv.pdf
+            ./content/cv/cv.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
