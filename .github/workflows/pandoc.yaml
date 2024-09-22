@@ -7,13 +7,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - run: mkdir assets/cv
       - uses: docker://pandoc/latex
         with:
           args: >-
             --standalone
-            --output=samantha_barron_cv.pdf
+            --output=./assets/cv/samantha_barron_cv.pdf
             ./content/cv/cv.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./samantha_barron_cv.pdf
+          path: ./assets/cv
