@@ -1,7 +1,7 @@
 +++
 title = 'Surfing the Web'
 date = 2024-09-22T01:51:27Z
-draft = true
+draft = false
 +++
 
 # Lizards.com
