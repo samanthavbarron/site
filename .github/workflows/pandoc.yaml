@@ -6,6 +6,7 @@ jobs:
   make_cv_pdf:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v3
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
