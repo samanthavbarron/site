@@ -1,0 +1,50 @@
+{{ $data := dict }}
+{{ $path := "data/papers.yaml" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+
+
+{{/* Add pages and page resources. */}}
+{{ range $data }}
+
+  {{/* Add page. */}}
+  {{ $content := dict "mediaType" "text/markdown" "value" .content }}
+  {{ $dates := dict "date" (time.AsTime .date) }}
+  {{ $params := dict "authors" .authors "tags" .tags "journal" .journal "url" .url }}
+  {{ $page := dict
+    "content" $content
+    "dates" $dates
+    "kind" "page"
+    "params" $params
+    "path" .title
+    "title" .title
+  }}
+  {{ $.AddPage $page }}
+
+  {{/* Add page resource. */}}
+  {{ $item := . }}
+  {{ with $url := $item.cover }}
+    {{ with resources.GetRemote $url }}
+      {{ with .Err }}
+        {{ errorf "Unable to get remote resource %s: %s" $url . }}
+      {{ else }}
+        {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
+        {{ $params := dict "alt" $item.title }}
+        {{ $resource := dict
+          "content" $content
+          "params" $params
+          "path" (printf "%s/cover.%s" $item.title .MediaType.SubType)
+        }}
+        {{ $.AddResource $resource }}
+      {{ end }}
+    {{ else }}
+      {{ errorf "Unable to get remote resource %s" $url }}
+    {{ end }}
+  {{ end }}
+
+{{ end }}
