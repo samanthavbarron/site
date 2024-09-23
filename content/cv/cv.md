@@ -1,8 +1,8 @@
-+++
-[cascade]
-  showtoc = true
-  tocopen = true
-+++
+---
+cascade:
+  showtoc: true
+  tocopen: true
+---
 
 # Samantha V. Barron, PhD
 > IBM Quantum, Software Developer
