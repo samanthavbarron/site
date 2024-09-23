@@ -1,8 +1,8 @@
-+++
-title = 'Surfing the Web'
-date = 2024-09-22T01:51:27Z
-draft = false
-+++
+---
+title: 'Surfing the Web'
+date: 2024-09-22T01:51:27Z
+draft: false
+---
 
 # Lizards.com
 People used to use the internet to explore. I used to go on [StumbleUpon](https://en.wikipedia.org/wiki/StumbleUpon) for hours when I was little, or hop around different pages on [Wikipedia](https://en.wikipedia.org/wiki/Main_Page). I think the desire to surf the web explains [Depths of Wikipedia](https://en.wikipedia.org/wiki/Depths_of_Wikipedia).

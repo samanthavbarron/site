@@ -1,8 +1,8 @@
-+++
-title = 'Phones Bad'
-date = 2024-09-22T01:49:35Z
-draft = false
-+++
+---
+title: 'Phones Bad'
+date: 2024-09-22T01:49:35Z
+draft: false
+---
 
 I had a really strange experience when I got on the train a while back. Everyone was on their phone. I don't mean *most* people were on their phones, I mean **everyone** was on their phone.
 

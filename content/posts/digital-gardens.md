@@ -1,8 +1,8 @@
-+++
-title = 'Digital Gardens'
-date = 2024-09-22T01:44:38Z
-draft = false
-+++
+---
+title: 'Digital Gardens'
+date: 2024-09-22T01:44:38Z
+draft: false
+---
 
 I'm thinking about Digital Gardens and alternate forms of social networks lately.
 

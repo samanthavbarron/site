@@ -1,8 +1,8 @@
-+++
-title = 'Learning to Code'
-date = 2024-09-22T01:46:57Z
-draft = false
-+++
+---
+title: 'Learning to Code'
+date: 2024-09-22T01:46:57Z
+draft: false
+---
 
 I've seen some people write about their journey learning to code. I thought I'd do the same for myself here.
 

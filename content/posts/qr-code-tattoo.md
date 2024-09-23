@@ -1,8 +1,8 @@
-+++
-title = 'My QR Code Tattoo'
-date = 2024-09-22T01:48:46Z
-draft = false
-+++
+---
+title: 'My QR Code Tattoo'
+date: 2024-09-22T01:48:46Z
+draft: false
+---
 
 Tattoos are seen as something permanent, so I think a tattoo that changes challenges that idea, and with a little work you can change what a QR code redirects to.
 

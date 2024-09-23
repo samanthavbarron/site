@@ -1,8 +1,8 @@
-+++
-title = 'ClamNet'
-date = 2024-09-22T01:29:14Z
-draft = false
-+++
+---
+title: 'ClamNet'
+date: 2024-09-22T01:29:14Z
+draft: false
+---
 
 Note: Images best viewed in light mode, figures censored for privacy
 

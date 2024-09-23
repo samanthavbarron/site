@@ -1,8 +1,8 @@
-+++
-title = 'Digital Identity'
-date = 2024-09-22T01:45:54Z
-draft = false
-+++
+---
+title: 'Digital Identity'
+date: 2024-09-22T01:45:54Z
+draft: false
+---
 
 I've been very interested in the idea of digital identity lately. I've been experimenting with what this looks like for myself, and I'd like to capture some ideas I have about what this means more broadly.
 

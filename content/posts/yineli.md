@@ -1,8 +1,8 @@
-+++
-title = 'Yineli'
-date = 2024-09-22T01:52:00Z
-draft = false
-+++
+---
+title: 'Yineli'
+date: 2024-09-22T01:52:00Z
+draft: false
+---
 
 Inspired by: [On digital relationships, by Manu](https://manuelmoreale.com/on-digital-relationships)
 
