@@ -44,9 +44,24 @@ menu:
       weight: 10
 
 params:
-  homeInfoParams:
-    Title: "Hi there!"
-    Content: I'm Samantha Barron, and this is my blog. I live in NYC and I work at IBM Quantum. I make the computer go beep boop. All thoughts my own.
+  profileMode:
+    enabled: true
+    title: "Hi there!"
+    subtitle: |
+      I'm Samantha Barron.
+
+      🏠 NYC 🏢 IBM Quantum
+
+      I make the computer go beep boop.
+      
+      All opinions my own.
+    buttons:
+      - name: Posts
+        url: "/posts"
+      - name: Papers
+        url: "/papers"
+      - name: Projects
+        url: "/projects"
 
   socialIcons:
     - name: github
