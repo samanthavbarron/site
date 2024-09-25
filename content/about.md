@@ -1,7 +1,7 @@
 # Me
 - I like computers
 - I live/work in NYC
-- My cat's name is Hoss
+- [My cat's name is Hoss](/images/stinky_baby.png)
 
 # Work
 Some of my professional background (all thoughts/ramblings/opinions my own):
