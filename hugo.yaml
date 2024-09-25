@@ -28,7 +28,7 @@ menu:
       url: about/
       weight: 1
     - name: CV
-      url: /cv
+      url: cv/
       weight: 2
     - name: Now
       url: now/
