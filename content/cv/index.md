@@ -5,7 +5,7 @@ cascade:
 ---
 
 # Samantha V. Barron, PhD
-## IBM Quantum, Software Developer
+### IBM Quantum, Software Developer
 
 [samantha.wiki](https://samantha.wiki), 
 [LinkedIn](https://www.linkedin.com/in/svbarron/), 
