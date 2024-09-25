@@ -26,7 +26,7 @@ I then randomized a few million domains with various common TLDs and scored them
 
 # Modifiable redirect
 
-Getting the redirect to change isn't very interesting from a technical perspective, but a tattoo that changes? I think that's pretty interesting. I achieved this by making an iOS shortcut that takes in a URL and sends it to an SSH command on the server that can modify the config files for a reverse proxy. The end result is that I can change the redirect very quickly, and I can even make it change based on my location. Neat! In retrospect, a better way to do this would be with a small flask app that reads in the current URL from an environment variable or something. That will be the next iteration.
+Getting the redirect to change isn't very interesting from a technical perspective, but a tattoo that changes? I think that's pretty interesting. I achieved this by [writing a flask app](https://github.com/samanthavbarron/api) which can dynamically change the redirect for one of its routes. In combination with a reverse proxy, this allows me to easily update the redirect to whatever I want from an iOS shortcut. I even have it so that it changes based on my location!
 
 # Choosing an Artist
 
