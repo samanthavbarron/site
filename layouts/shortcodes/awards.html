@@ -1,0 +1,16 @@
+{{ $data := dict }}
+{{ $path := "data/awards.yaml" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+{{ range sort $data "date_sort" "desc" }}
+  <div class="awards">
+    <u><b>{{ .date }}</b></u> @ <i>{{ .location_short }}</i>:
+    <br><div style="margin-left: 20px;">
+    {{ .title }}</div>
+  </div>
+{{ end }}

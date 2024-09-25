@@ -1,0 +1,74 @@
+- title: Quantum Software Developer
+  date: 2023-present
+  date_sort: 2023-01-01
+  institution: IBM Quantum
+  outcomes:
+    - Developed composable error mitigation capabilities in the Qiskit Primitives.
+    - Advanced our understanding (arXiv:2312.00733) of error bounds for error mitigation methods, and experimentally demonstrated the viability of this approach on 127-qubit devices.
+    - Introduced a novel benchmarking method to rigorously assess error mitigation performance, enabling meaningful interpretations of mitigation results.
+    - Identifying modes of failure and performance bottlenecks for the Qiskit Primitives by developing internal stress-testing, performance, and profiling techniques/tools.
+- title: Quantum Computing Research Intern
+  date: Fall 2021
+  date_sort: 2021-09-01
+  institution: IBM Quantum
+  outcomes:
+    - Created an interface between Qiskit and PastaQ (Julia package) for use in Quantum Process Tomography (QPT).
+    - Created demonstration of tensor-based, Quantum Process Tomography with IBM Quantum devices, yielding low-rank approximations of Choi matrices from sparse QPT data.
+    - Wrote code to approximate Pauli error rates based off of low-rank Choi matrices.
+    - Mentored by Chris Wood
+- title: Science Graduate Student Research Program (SCGSR)
+  date: Summer 2021
+  date_sort: 2021-05-01
+  institution: DOE+ORNL
+  outcomes:
+    - Extended work on symmetry preserving circuits to larger systems, added experimental results using IBM devices, published results.
+    - Implemented custom simulator (in Julia) for ADAPT-VQE algorithm, which increased our simulation capabilities from 10 qubits to 20 qubits with order of magnitude improvements in speed.
+    - Used custom simulator to investigate the presence/absence of barren plateaus in ADAPT-VQE cost function.
+- title: Quantum Computing Research Intern
+  date: Summer 2020
+  date_sort: 2020-05-01
+  institution: IBM Quantum
+  outcomes:
+    - Mentored by Chris Wood
+    - Implemented error mitigation algorithm for operator expectation values in Qiskit Ignis.
+    - The resulting code has been integrated into Qiskit Ignis, [available here](https://github.com/qiskit/qiskit-ignis/pull/500)
+    - Investigated the improvement to variational quantum algorithms when using this error mitigation technique. This is work is available at arXiv:2010.08520
+- title: Graduate Research Assistant
+  date: 2018-2022
+  date_sort: 2022-12-31
+  institution: Virginia Tech
+  outcomes:
+    - Developed CPHASE gates on superconducting transmon qubits with microwave control.
+    - Developed resource efficient, symmetry preserving ansätze for Variational Quantum Eigensolvers (VQEs) and their applications in quantum chemistry problems.
+    - Developed the application of resource efficient, symmetry preserving ansätze for use on IBM QPUs.
+    - Developed quantum-classical hybrid algorithms that change the structure of the ansatz as the algorithm is performed.
+- title: Undergraduate Research Assistant
+  date: Summer 2015
+  date_sort: 2015-05-01
+  institution: University of Georgia
+  outcomes:
+    - Proved that the Quantum Fourier Transform can be efficiently performed in the Single Excitation Subspace architecture for quantum computing.
+    - Researched applications of this for use in benchmarking quantum computers.
+- title: Course Instructor
+  date: Fall 2019
+  date_sort: 2019-09-01
+  institution: Virginia Tech
+  outcomes:
+    - Lecturing (5 lectures and a final exam) ~100 undergraduate students on topics in quantum information science at Virginia Tech as part of a course with 4 other sections in contemporary physics.
+    - The quantum information science section of the course covers physical models for qubits, circuit and measurement-based quantum computing, the Deutsch-Jozsa algorithm, Shor's algorithm, and basic arithmetic for quantum operations.
+- title: Graduate Teaching Assistant
+  date: Fall 2017
+  date_sort: 2017-09-01
+  institution: Virginia Tech
+  outcomes:
+    - Teaching physics labs at the introductory level, specifically focusing on guiding students to more accurate ways of thinking rather than giving them the answer.
+    - Focusing on methods of solving problems that will help them in class as well as give a physical intuition that relates to everyday life.
+    - Responsible for grading labs and entering grades in a timely manner, as well as proctoring exams.
+- title: Algorithms R&D Intern
+  date: Summer 2017
+  date_sort: 2017-05-01
+  institution: Wolfram Research
+  outcomes:
+    - Updated documentation for about 80 existing number theory functions in Mathematica.
+    - Developed Mathematica package that uses information from FactorDB.com to gather information about integer factorization and primality.
+    - Developed Mathematica package that gathers about 70 computational number theory functions from an external source for use in Mathematica, allowing users to directly view the code and learn more about the algorithms being used.

@@ -1,0 +1,16 @@
+{{ $data := dict }}
+{{ $path := "data/education.yaml" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+{{ range sort $data "start" "desc" }}
+  <div class="education", style="margin-left: 20px;">
+  <li>
+    <i>{{ .start }}-{{ .finish }}</i>: <b>{{ .degree }}</b>, {{ .area }}, {{ .institution }}
+  </li>
+  </div>
+{{ end }}

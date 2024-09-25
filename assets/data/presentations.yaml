@@ -1,0 +1,110 @@
+- title: Quantum Simulation with Noisy Intermediate Scale Superconducting Devices
+  location: JHU APL
+  date: 2019
+  date_sort: 2019-01-01
+  tags:
+    - invited
+- title: Quantum Simulation with Noisy Intermediate Scale Superconducting Devices
+  location: UMBC Quantum Control Group
+  date: 2019
+  date_sort: 2019-01-01
+  tags:
+    - invited
+- title: Quantum Simulation with Noisy Intermediate Scale Superconducting Devices
+  location: ORNL Quantum Computing Institute
+  date: 2019
+  date_sort: 2019-01-01
+  tags:
+    - invited
+- title: Quantum Simulation with Noisy Intermediate Scale Superconducting Devices
+  location: Southeast Quantum Computing Workshop
+  date: 2019
+  date_sort: 2019-01-01
+  tags:
+    - invited
+- title: Measurement Error Mitigation for Variational Quantum Algorithms
+  location: APS March Meeting
+  date: 2021
+  date_sort: 2021-03-01
+  tags:
+    - contributed
+- title: Preserving Symmetries for Variational Quantum Eigensolvers in the Presence of Noise
+  location: APS March Meeting
+  date: 2020
+  date_sort: 2020-03-01
+  tags:
+    - contributed
+- title: Microwave-based CPHASE Gates for Transmon Qubits
+  location: APS March Meeting
+  date: 2019
+  date_sort: 2019-03-01
+  tags:
+    - contributed
+- title: QFT in SES and Applications
+  location: University of Georgia CURO Symposium
+  date: 2016
+  date_sort: 2016-01-01
+  type: oral
+  tags:
+    - contributed
+
+- title: Expectation Value Error Mitigation for Variational Quantum Algorithms
+  location: IBM Research Intern Poster Session
+  date: 2020
+  date_sort: 2020-05-01
+  tags:
+    - poster
+- title: Preserving Symmetries for Variational Quantum Eigensolvers in the Presence of Noise
+  location: QCTIP
+  date: 2020
+  date_sort: 2020-04-01
+  tags:
+    - poster
+- title: Preserving Symmetries for Variational Quantum Eigensolvers in the Presence of Noise
+  location: QIP
+  date: 2020
+  date_sort: 2020-01-01
+  tags:
+    - poster
+- title: Preserving Symmetries for Variational Quantum Eigensolvers in the Presence of Noise
+  location: QSC
+  date: 2019
+  date_sort: 2019-08-01
+  tags:
+    - poster
+- title: Metrics and Benchmarks for Quantum Computing
+  location: DOE ASCR PI Meeting
+  date: 2018
+  date_sort: 2018-01-01
+  tags:
+    - poster
+- title: Quantum Theory and Quantum Computing
+  location: Blacksburg High School
+  date: Yearly 2017-2022
+  date_sort: 2017-01-01
+  tags:
+    - outreach
+- title: STEM Prep Summer Institute-Scientific Computing (C2QA)
+  location: Virginia Tech
+  date: Summer 2021
+  date_sort: 2021-05-01
+  tags:
+    - outreach
+- title: BEE VT group activities supervisor
+  location: Virginia Tech
+  date: Summer 2021
+  date_sort: 2021-05-01
+  tags:
+    - outreach
+- title: CTech2 group activities supervisor
+  location: Virginia Tech
+  date: Summer 2021
+  date_sort: 2021-05-01
+  tags:
+    - outreach
+- title: CTech2 group activities supervisor
+  location: Virginia Tech
+  date: Summer 2019
+  date_sort: 2019-05-01
+  tags:
+    - outreach

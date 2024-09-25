@@ -1,0 +1,22 @@
+{{ $data := dict }}
+{{ $path := "data/experience.yaml" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+{{ range sort $data "date_sort" "desc" }}
+  <div class="experience">
+    <u><b>{{ .title }}</b></u> @ <i>{{ .institution }}</i>
+    <br>
+    ({{ .date }})
+    {{ range .outcomes }}
+      <div style="margin-left: 20px;">
+      <li>{{ . }}</li>
+      </div>
+    {{ end }}
+    <br>
+  </div>
+{{ end }}

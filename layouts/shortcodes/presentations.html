@@ -1,0 +1,32 @@
+{{ $data := dict }}
+{{ $path := "data/presentations.yaml" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+{{ range sort $data "date_sort" "desc" }}
+  <div class="presentations", style="margin-left: 20px;">
+  <li>
+    <b>{{ .date }} @ {{ .location }}</b>: <i>{{ .title }}</i>
+
+    {{ if in .tags "invited" }}
+      <div, style="color:red"><b>(invited)</b></div>
+    {{ end }}
+
+    {{ if in .tags "outreach" }}
+      <div, style="color:yellow"><b>(outreach)</b></div>
+    {{ end }}
+
+    {{ if in .tags "contributed" }}
+      <div, style="color:green"><b>(contributed)</b></div>
+    {{ end }}
+
+    {{ if in .tags "poster" }}
+      <div, style="color:aqua">(poster)</div>
+    {{ end }}
+  </li>
+  </div>
+{{ end }}
