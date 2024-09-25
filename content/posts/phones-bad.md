@@ -11,7 +11,7 @@ I feel like writing about this at all is beating a dead horse because intuitivel
 I think how we got here is [well-understood from an economic perspective](https://en.wikipedia.org/wiki/Surveillance_capitalism). But what can we do about it?
 
 # Use Clunky Devices?
-At some point a few years ago in the development of [ClamNet](/posts/clamnet) I ended up using a [GrapheneOS](https://grapheneos.com) phone for daily use. It was great because it sucked. It made me not want to be on my phone. It was a hassle and a pain to do things on it.
+At some point a few years ago in the development of [ClamNet](/projects/clamnet) I ended up using a [GrapheneOS](https://grapheneos.com) phone for daily use. It was great because it sucked. It made me not want to be on my phone. It was a hassle and a pain to do things on it.
 
 After a while the itch of reaching for my phone subsided, and I didn't feel addicted anymore. Ultimately, I found it to be very difficult for everyday use, so I begrudgingly got an iPhone.
 
