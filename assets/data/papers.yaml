@@ -181,11 +181,11 @@
   tags:
     - qaoa
 - title: Provable bounds for noise-free expectation values computed from noisy samples
-  date: 2023-12-01
-  url: https://arxiv.org/abs/2312.00733
-  journal: arXiv
+  date: 2024-11-01
+  url: https://www.nature.com/articles/s43588-024-00709-1
+  journal: Nature Computational Science
   content: |
-    In this paper, we explore the impact of noise on quantum computing, particularly focusing on the challenges when sampling bit strings from noisy quantum computers as well as the implications for optimization and machine learning applications. We formally quantify the sampling overhead to extract good samples from noisy quantum computers and relate it to the layer fidelity, a metric to determine the performance of noisy quantum processors. Further, we show how this allows us to use the Conditional Value at Risk of noisy samples to determine provable bounds on noise-free expectation values. We discuss how to leverage these bounds for different algorithms and demonstrate our findings through experiments on a real quantum computer involving up to 127 qubits. The results show a strong alignment with theoretical predictions. 
+    Quantum computing has emerged as a powerful computational paradigm capable of solving problems beyond the reach of classical computers. However, today’s quantum computers are noisy, posing challenges to obtaining accurate results. Here, we explore the impact of noise on quantum computing, focusing on the challenges in sampling bit strings from noisy quantum computers and the implications for optimization and machine learning. We formally quantify the sampling overhead to extract good samples from noisy quantum computers and relate it to the layer fidelity, a metric to determine the performance of noisy quantum processors. Further, we show how this allows us to use the conditional value at risk of noisy samples to determine provable bounds on noise-free expectation values. We discuss how to leverage these bounds for different algorithms and demonstrate our findings through experiments on real quantum computers involving up to 127 qubits. The results show strong alignment with theoretical predictions.
   authors:
     - Samantha V. Barron
     - Daniel J. Egger
