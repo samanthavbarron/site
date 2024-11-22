@@ -68,6 +68,8 @@ params:
       url: https://github.com/samanthavbarron
     - name: rss
       url: index.xml
+    - name: bluesky
+      url: https://bsky.app/profile/samantha.wiki
     - name: email
       url: mailto:sam@sambarron.me
     - name: googlescholar
