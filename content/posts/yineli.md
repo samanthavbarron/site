@@ -2,7 +2,6 @@
 title: 'Yineli'
 date: 2024-09-22T01:52:00Z
 draft: false
-bsky: "https://bsky.app/profile/coryzue.com/post/3lbrko5zsgk24"
 ---
 
 Inspired by: [On digital relationships, by Manu](https://manuelmoreale.com/on-digital-relationships)
