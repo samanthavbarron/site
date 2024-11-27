@@ -81,6 +81,7 @@ params:
 
   DateFormat: "January 2, 2006"
   ShowPostNavLinks: true
+  comments: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
