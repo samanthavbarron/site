@@ -70,6 +70,8 @@ params:
       url: index.xml
     - name: bluesky
       url: https://bsky.app/profile/samantha.wiki
+    - name: matrix
+      url: https://matrix.to/#/@samantha:matrix.samantha.wiki
     - name: email
       url: mailto:sam@sambarron.me
     - name: googlescholar
