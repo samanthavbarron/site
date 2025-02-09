@@ -31,7 +31,7 @@ jobs:
     - name: Update Bookmarks
       run: |
         pip install requests
-        touch "content/bookmarks/${{ inputs.name }}.md"
+        python scripts/bookmarks.py
 
     # Commit and push all changed files.
     - name: Commit Push
