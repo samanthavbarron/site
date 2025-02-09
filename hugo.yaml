@@ -42,6 +42,9 @@ menu:
     - name: Tags
       url: tags/
       weight: 10
+    - name: Bookmarks
+      url: bookmarks/
+      weight: 15
 
 params:
   profileMode:
