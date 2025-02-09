@@ -1,0 +1,39 @@
+name: Bookmarks
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Bookmark file name'
+        # Default value if no value is explicitly provided
+        default: 'name'
+        # Input has to be provided for the workflow to run
+        required: true
+        # The data type of the input
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env: 
+      CI_COMMIT_MESSAGE: Update bookmarks
+      CI_COMMIT_AUTHOR: Continuous Integration
+    steps:
+    - uses: actions/checkout@v3
+
+    # Update the bookmark
+    - name: Update Bookmarks
+      run: |
+        touch "content/bookmarks/${{ inputs.name }}.md"
+
+    # Commit and push all changed files.
+    - name: Commit Push
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "username@users.noreply.github.com"
+        git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push
