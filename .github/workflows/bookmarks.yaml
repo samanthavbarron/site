@@ -35,6 +35,7 @@ jobs:
     # Commit and push all changed files.
     - name: Commit Push
       run: |
+        git config --global init.defaultBranch main
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "username@users.noreply.github.com"
         git add -A
