@@ -20,6 +20,9 @@ jobs:
 
     # Update the bookmark
     - name: Update Bookmarks
+      env:
+        HRSS_BASE_URL: ${{ secrets.HRSS_BASE_URL }}
+        HRSS_RSS_FEED_TAG_PREFIX: ${{ secrets.HRSS_RSS_FEED_TAG_PREFIX }}
       run: |
         pip install requests
         python scripts/bookmarks.py
