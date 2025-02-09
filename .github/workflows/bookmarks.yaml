@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: bookmarks
     env: 
       CI_COMMIT_MESSAGE: Update bookmarks
       CI_COMMIT_AUTHOR: Continuous Integration
