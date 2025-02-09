@@ -23,6 +23,7 @@ jobs:
       env:
         HRSS_BASE_URL: ${{ secrets.HRSS_BASE_URL }}
         HRSS_RSS_FEED_TAG_PREFIX: ${{ secrets.HRSS_RSS_FEED_TAG_PREFIX }}
+        HRSS_HOARDER_API_TOKEN: ${{ secrets.HRSS_HOARDER_API_TOKEN }}
       run: |
         pip install requests
         python scripts/bookmarks.py
