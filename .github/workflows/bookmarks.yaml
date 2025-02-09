@@ -30,6 +30,7 @@ jobs:
     # Update the bookmark
     - name: Update Bookmarks
       run: |
+        pip install requests
         touch "content/bookmarks/${{ inputs.name }}.md"
 
     # Commit and push all changed files.
