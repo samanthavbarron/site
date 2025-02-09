@@ -10,7 +10,7 @@ import requests
 
 @lru_cache() # lol
 def get_current_time_iso():
-    return datetime.now(timezone.utc).isoformat(timespec='seconds') + "Z"
+    return datetime.now(timezone.utc).isoformat(timespec='seconds').replace("+00:00", "Z")
 
 
 @lru_cache()
