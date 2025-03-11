@@ -266,3 +266,19 @@
     - Raphael Pooser
   tags:
     - benchmark
+- title: When Clifford benchmarks are sufficient; estimating application performance with scalable proxy circuits
+  date: 2025-03-07
+  url: https://arxiv.org/abs/2503.05943
+  journal: arXiv
+  content: |
+    The goal of benchmarking is to determine how far the output of a noisy system is from its ideal behavior; this becomes exceedingly difficult for large quantum systems where classical simulations become intractable. A common approach is to turn to circuits comprised of elements of the Clifford group (e.g., CZ, CNOT, π and π/2 gates), which probe quantum behavior but are nevertheless efficient to simulate classically. However, there is some concern that these circuits may overlook error sources that impact the larger Hilbert space. In this manuscript, we show that for a broad class of error models these concerns are unwarranted. In particular, we show that, for error models that admit noise tailoring by Pauli twirling, the diamond norm and fidelity of any generic circuit is well approximated by the fidelities of proxy circuits composed only of Clifford gates. We discuss methods for extracting the fidelities of these Clifford proxy circuits in a manner that is robust to errors in state preparation and measurement and demonstrate these methods in simulation and on IBM Quantum's fleet of deployed heron devices.
+  authors:
+    - Seth Merkel
+    - Timothy Proctor
+    - Samuele Ferracin
+    - Jordan Hines
+    - Samantha Barron
+    - Luke C. G. Govia
+    - David McKay
+  tags:
+    - benchmark
