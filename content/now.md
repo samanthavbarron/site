@@ -27,4 +27,4 @@
 - [Hard Fork](https://pod.link/1528594034)
 
 # Honestly Though
-I'm ready for fall colors <3
+I'm ready summerrrr

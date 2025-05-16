@@ -10,7 +10,7 @@ Some of my professional background (all thoughts/ramblings/opinions my own):
 - Then I did [my PhD](https://vtechworks.lib.vt.edu/items/242de203-d61b-417b-a5d1-63f710d7daab) in physics (quantum computing) at Virginia Tech, where I was advised by [Sophia Economou](https://www.phys.vt.edu/About/people/Faculty/sophia-economou.html).
 - Now I work at [IBM Quantum](https://www.ibm.com/quantum).
 
-# Links (Who doesn't like links?)
+# Links (Who Doesn't like links?)
 ## Social
 - [`@samantha.wiki` on the Fediverse](https://fed.samantha.wiki/)
 - [samantha.omg.lol](https://samantha.profile.lol)

@@ -5,7 +5,7 @@ cascade:
 ---
 
 # Samantha V. Barron, PhD
-### IBM Quantum, Software Developer
+## IBM Quantum, Software Developer
 
 [samantha.wiki](https://samantha.wiki), 
 [LinkedIn](https://www.linkedin.com/in/svbarron/), 
@@ -15,16 +15,16 @@ cascade:
 
 I currently work at IBM Quantum, where I develop and improve error mitigation and characterization techniques in the [Qiskit Primitives](https://docs.quantum.ibm.com/api/qiskit/primitives). Previously, during [my Ph.D.](https://vtechworks.lib.vt.edu/items/242de203-d61b-417b-a5d1-63f710d7daab), I created entangling gates for superconducting qubits, improved variational algorithms, and analyzed error mitigation techniques.
 
-## [Papers](/papers)
+# [Papers](/papers)
 
-## Education
+# Education
 {{< education >}}
 
-## Awards
+# Awards
 {{< awards >}}
 
-## Experience
+# Experience
 {{< experience >}}
 
-## Presentations
+# Presentations
 {{< presentations >}}

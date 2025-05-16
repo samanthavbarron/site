@@ -16,7 +16,7 @@ Another challenge is that it needs to be somewhat flat to scan well. Some people
 
 I also went ahead and paid for the domain registration for a decade so I wouldn't accidentally forget to renew it one year.
 
-# Needs to be "easy" to tattoo
+# Needs to Be "easy" to Tattoo
 
 This was the most challenging part. I needed the QR code to have a small number of corners/borders/etc so that the tattoo itself doesn't have too much detail. This would make it easier to tattoo, but also make it less susceptible to the edges fading/blurring over time.
 
@@ -24,7 +24,7 @@ To do this, I [found a python package](https://pypi.org/project/qrcode/) that le
 
 I then randomized a few million domains with various common TLDs and scored them. After playing around with the weights from the various metrics, I landed on a setting that seemed good, and I picked one. Most of the domains that ended up being generated were available, that ended up not being an issue.
 
-# Modifiable redirect
+# Modifiable Redirect
 
 Getting the redirect to change isn't very interesting from a technical perspective, but a tattoo that changes? I think that's pretty interesting. I achieved this by [writing a flask app](https://github.com/samanthavbarron/api) which can dynamically change the redirect for one of its routes. In combination with a reverse proxy, this allows me to easily update the redirect to whatever I want from an iOS shortcut. I even have it so that it changes based on my location!
 
