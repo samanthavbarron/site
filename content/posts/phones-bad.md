@@ -23,17 +23,17 @@ My favorite thing about the Apple Watch is that it kinda sucks. There’s not a 
 
 I don't think this is a problem of self-control. I don't think it's fair to us given that these apps are engineered to hijack our self-control. And it's certainly not fair to younger generations that are growing up with these things.
 
-# What prevents us from solving this problem today?
-## Technology is centrally controlled (technical problem)
+# What Prevents Us from Solving This Problem Today?
+## Technology is Centrally Controlled (technical problem)
 The platforms that we use tend to be centrally controlled and organized. I think this is the aspect that most people intuitively understand. Meta/Twitter/TikTok are all centrally controlled, and they have very little incentive to change.
 
-## Technology is centrally manufactured (political problem)
+## Technology is Centrally Manufactured (political problem)
 The physical devices that we use are extremely complex, expensive, and difficult to manufacture. The production of these devices is very centrally controlled and organized. Similarly, a lot of these devices have software that (by default) we do not control. Even worse, it's becoming increasingly hard to modify the software on our devices.
 
-## Technological literacy is centralized (social problem)
+## Technological Literacy is Centralized (social problem)
 Most people don't know how to use technology in a technical way. The technology we get is extremely polished, refined, and usable so that we don't have to understand the details. As a result, very few people have the ability to modify them to suit their needs.
 
-# Where do we go from here?
+# Where Do We Go from Here?
 
 **The technical problem**: Of these problems, I think is the easiest to solve of these (*I said easiest, not easy*). There are a lot of efforts to decentralize social media, e.g. [Bluesky](https://bsky.app/), [Mastodon](https://joinmastodon.org/), [Matrix](https://matrix.org/), etc. For people aware of these things, we should make the switch ourselves, and encourage our less tech-savvy friends to do the same.
 
@@ -43,7 +43,7 @@ Most people don't know how to use technology in a technical way. The technology 
 1. The first is that everyone is capable of becoming more technologically literate. I believe that it serves to benefit the forces of centralization in technology that people feel incapable of learning how to code. I believe that coding is as fundamental a skill to our cognitive abilities as reading, writing, and math. I believe that everyone can do it, it's just a matter of sitting with the initial discomfort/frustration of learning.
 2. I am not sure how AI will contribute to this. There is one path where we can use AI to augment our cognitive abilities. The other path is that we use AI to replace our cognitive abilities. **What I do know is**: In the absence of very concerted efforts towards the former, a small number of companies will make this choice for us.
 
-# So what can *You and I* do?
+# So what Can *You and I* Do?
 If you happen to have massive amounts of geopolitical power, perhaps reconsider. For the rest of us:
 - Encourage people to use better platforms.
 - Encourage people to [learn to code](https://www.codecademy.com/).
