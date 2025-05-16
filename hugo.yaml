@@ -3,7 +3,6 @@ languageCode: en-us
 title: samantha.wiki
 theme: PaperMod
 
-
 outputs:
   home:
     - HTML
