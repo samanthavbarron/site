@@ -3,7 +3,6 @@ title: 'Yineli'
 date: 2024-09-22T01:52:00Z
 draft: false
 ---
-
 Inspired by: [On digital relationships, by Manu](https://manuelmoreale.com/on-digital-relationships)
 
 Around 2010 I met someone named Yineli on [Last.fm](https://last.fm) through commenting on each others' profiles. We had very similar music tastes, and she introduced me to [Blue Foundation](https://en.wikipedia.org/wiki/Blue_Foundation) and [Portishead](https://en.wikipedia.org/wiki/Portishead_(band)).
