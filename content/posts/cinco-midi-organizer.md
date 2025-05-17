@@ -5,7 +5,7 @@ draft: false
 ---
 {{< youtube "puVYtkh-LO4" >}}
 
-We can only assume that in the above product demonstration, the CMO is being stretched to its computational limits, as Cinco has a large tech branch where [they](https://www.youtube.com/watch?v=a8K6QUPmv8Q) [showcase](https://www.youtube.com/watch?v=XEW5b5ZtaV0) [new](https://www.youtube.com/watch?v=R-o7YG3x0DI) [technologies](https://www.youtube.com/watch?v=x9S2ciB-6jc).
+We can only assume that in the above product demonstration, the Cinco MIDI Organizer is being stretched to its computational limits, as Cinco has a large tech branch where [they](https://www.youtube.com/watch?v=a8K6QUPmv8Q) [showcase](https://www.youtube.com/watch?v=XEW5b5ZtaV0) [new](https://www.youtube.com/watch?v=R-o7YG3x0DI) [technologies](https://www.youtube.com/watch?v=x9S2ciB-6jc).
 
 There are `~180` digits in the Cinco MIDI Organizer’s (CMO) UMRN (Unique Midi Routing Number). This means it can index as many as `10^180` MIDI files. That means if you filled up the CMO with that many MIDI files of `1` second each, the duration of your CMO library would be `10^162` times the age of the universe.
 
