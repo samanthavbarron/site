@@ -3,7 +3,7 @@ title: Cinco MIDI Organizer
 date: 2025-05-16T00:00:00Z
 draft: false
 ---
-![](https://www.youtube.com/watch?v=puVYtkh-LO4)
+{{< youtube "puVYtkh-LO4" >}}
 
 We can only assume that in the above product demonstration, the CMO is being stretched to its computational limits, as Cinco has a large tech branch where [they](https://www.youtube.com/watch?v=a8K6QUPmv8Q) [showcase](https://www.youtube.com/watch?v=XEW5b5ZtaV0) [new](https://www.youtube.com/watch?v=R-o7YG3x0DI) [technologies](https://www.youtube.com/watch?v=x9S2ciB-6jc).
 
