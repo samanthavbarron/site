@@ -45,6 +45,9 @@ menu:
     - name: Bookmarks
       url: bookmarks/
       weight: 15
+    - name: Feedback
+      url: https://link.samantha.wiki/feedback
+      weight: 20
 
 params:
   profileMode:
