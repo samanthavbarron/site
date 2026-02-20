@@ -80,6 +80,19 @@ This builds the image locally and runs the Hugo server at `http://localhost:80`.
 
 ---
 
+## Pushing to Main
+
+After every push to `main`, monitor the GitHub Actions workflows to confirm they all pass before considering the task complete. Use:
+
+```bash
+gh run list --limit 5
+gh run watch <run-id> --exit-status
+```
+
+All three workflows (Docker Smoke Test, Build and Push Docker Image, Docker Build and Push) must succeed. If any fail, investigate the logs and fix before moving on.
+
+---
+
 ## CI/CD Workflows
 
 | Workflow | File | Trigger | Purpose |
