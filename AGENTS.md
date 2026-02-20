@@ -17,7 +17,7 @@ This repository contains the source for `samantha.wiki`, a personal Hugo static 
 ├── content/                # Site content (posts, papers, projects, cv, images)
 ├── layouts/                # Custom Hugo layouts and shortcodes
 ├── scripts/                # Automation scripts (pending removal — see below)
-├── themes/PaperMod/        # Forked PaperMod theme (git submodule, branch: v8.0-comments)
+├── themes/PaperMod/        # Forked PaperMod theme (git submodule, default branch)
 ├── Dockerfile              # Builds the Hugo site and serves it on port 80
 ├── docker-compose.yml      # Local compose config for the hugo service
 ├── hugo.yaml               # Hugo site configuration
@@ -29,7 +29,7 @@ This repository contains the source for `samantha.wiki`, a personal Hugo static 
 ## Tech Stack
 
 - **Static site generator**: [Hugo](https://gohugo.io/) extended, configured in `hugo.yaml`
-- **Theme**: Forked PaperMod (`themes/PaperMod`, branch `v8.0-comments`) — includes custom comment support
+- **Theme**: Forked PaperMod (`themes/PaperMod`, default branch) — includes custom comment support
 - **Container runtime**: Docker (image served on port 80 inside the container)
 - **Registry**: GitHub Container Registry (`ghcr.io/<owner>/<repo>`)
 - **CI/CD**: GitHub Actions (see `.github/workflows/`)
