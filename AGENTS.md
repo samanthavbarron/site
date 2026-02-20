@@ -18,7 +18,6 @@ This repository contains the source for `samantha.wiki`, a personal Hugo static 
 ├── layouts/                # Custom Hugo layouts and shortcodes
 ├── scripts/                # Automation scripts (pending removal — see below)
 ├── themes/PaperMod/        # Forked PaperMod theme (git submodule, branch: v8.0-comments)
-├── auto_update.sh          # Git pull/commit/push helper for content updates
 ├── Dockerfile              # Builds the Hugo site and serves it on port 80
 ├── docker-compose.yml      # Local compose config for the hugo service
 ├── hugo.yaml               # Hugo site configuration
@@ -95,8 +94,6 @@ This builds the image locally and runs the Hugo server at `http://localhost:80`.
 ## Content Management
 
 - **Manual edits**: Edit files in `content/` and push to `main`. GitHub Actions will rebuild automatically.
-- **Auto-update script**: `auto_update.sh` does a `git pull`, stages non-draft changes, commits with "auto-update", and pushes. Files prefixed with `draft_` are excluded.
-
 ---
 
 ## Dev Container
