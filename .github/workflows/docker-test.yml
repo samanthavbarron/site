@@ -36,11 +36,18 @@ jobs:
       - name: Wait for server to be ready
         run: |
           for i in $(seq 1 30); do
-            if curl -sf http://localhost/ > /dev/null 2>&1; then
+            STATUS=$(docker inspect site-test --format='{{.State.Status}}' 2>/dev/null || echo 'missing')
+            echo "Waiting... ($i/30) | container: $STATUS"
+            docker logs --tail 10 site-test 2>&1 || true
+            if curl -sf --max-time 5 --connect-timeout 3 http://localhost/ > /dev/null 2>&1; then
               echo "Server is up"
               exit 0
             fi
-            echo "Waiting... ($i/30)"
+            if [ "$STATUS" != "running" ]; then
+              echo "Container is no longer running — aborting"
+              docker logs site-test 2>&1
+              exit 1
+            fi
             sleep 2
           done
           echo "Server did not become ready in time"
