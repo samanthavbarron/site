@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains the source for `samantha.wiki`, a personal Hugo static site. The site is built into a Docker image, published to GitHub Container Registry (GHCR), and served from a self-hosted server. A separate GitHub Pages deployment also exists for the same content.
+This repository contains the source for `samantha.wiki`, a personal Hugo static site. The site is built into a Docker image, published to GitHub Container Registry (GHCR), and served from a self-hosted server.
 
 ---
 
@@ -21,7 +21,7 @@ This repository contains the source for `samantha.wiki`, a personal Hugo static 
 ├── Dockerfile              # Builds the Hugo site and serves it on port 80
 ├── docker-compose.yml      # Local compose config for the hugo service
 ├── hugo.yaml               # Hugo site configuration
-└── CNAME                   # samantha.wiki (for GitHub Pages)
+└── CNAME                   # samantha.wiki
 ```
 
 ---
@@ -84,10 +84,9 @@ This builds the image locally and runs the Hugo server at `http://localhost:80`.
 
 | Workflow | File | Trigger | Purpose |
 |----------|------|---------|---------|
-| Hugo Pages | `hugo.yaml` | Push to `main`, manual | Builds and deploys to GitHub Pages |
 | Docker Build | `docker-build.yml` | Push/PR to `main` | Builds image; pushes only on non-PR pushes |
 | Docker Publish | `docker-publish.yml` | Push/PR to `main`, version tags | Builds + pushes to GHCR with full metadata tagging |
-| Bookmarks Sync | `bookmarks.yaml` | Daily at 00:00 UTC, manual | **Deprecated — pending removal** |
+| Docker Smoke Test | `docker-test.yml` | Push/PR to `main` | Builds image and asserts the Hugo server returns HTTP 200 |
 
 ---
 
@@ -143,7 +142,6 @@ docker push ghcr.io/<owner>/<repo>:latest
 The following are no longer in use and will be removed:
 
 - `scripts/bookmarks.py` — Hoarder bookmark sync script
-- `.github/workflows/bookmarks.yaml` — scheduled workflow that ran the sync
 - `content/bookmarks/` — bookmark content directory
 
 Do not add new functionality that depends on any of these. Do not worry about preserving their behavior when making other changes.
