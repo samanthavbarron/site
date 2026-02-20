@@ -20,7 +20,6 @@ Some of my professional background (all thoughts/ramblings/opinions my own):
 - [DaftSocial: samantha](https://daftsocial.com/samantha/)
 - [Letterboxd](https://letterboxd.com/samantha_wiki/)
 - `samantha-wiki` on [Libera.chat](https://libera.chat/)
-- 💩 [Instagram: @samantha.wiki](https://instagram.com/samantha.wiki)
 - 💩 [Threads: @samantha.wiki](https://www.threads.net/@samantha.wiki)
 ## Professional
 - [Google Scholar: Samantha V. Barron](https://scholar.google.com/citations?user=2ak_k_UAAAAJ&hl=en&oi=ao) 
