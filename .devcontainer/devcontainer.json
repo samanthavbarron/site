@@ -2,12 +2,12 @@
     "name": "site",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "postCreateCommand": "./.devcontainer/install.sh",
+    "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
     "customizations": {
         "vscode": {
             "extensions": [
                 "Anthropic.claude-code"
             ]
         },
-    "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} }
     }
 }
