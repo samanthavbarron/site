@@ -16,7 +16,6 @@ This repository contains the source for `samantha.wiki`, a personal Hugo static 
 ├── assets/data/            # YAML data files
 ├── content/                # Site content (posts, papers, projects, cv, images)
 ├── layouts/                # Custom Hugo layouts and shortcodes
-├── scripts/                # Automation scripts (pending removal — see below)
 ├── themes/PaperMod/        # Forked PaperMod theme (git submodule, default branch)
 ├── Dockerfile              # Builds the Hugo site and serves it on port 80
 ├── docker-compose.yml      # Local compose config for the hugo service
@@ -150,11 +149,3 @@ docker push ghcr.io/<owner>/<repo>:latest
 ```
 
 
-## Deprecated / Pending Removal
-
-The following are no longer in use and will be removed:
-
-- `scripts/bookmarks.py` — Hoarder bookmark sync script
-- `content/bookmarks/` — bookmark content directory
-
-Do not add new functionality that depends on any of these. Do not worry about preserving their behavior when making other changes.

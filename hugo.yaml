@@ -42,9 +42,6 @@ menu:
     - name: Tags
       url: tags/
       weight: 10
-    - name: Bookmarks
-      url: bookmarks/
-      weight: 15
     - name: Feedback
       url: https://link.samantha.wiki/feedback
       weight: 20
