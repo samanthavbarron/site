@@ -1,5 +1,5 @@
 services:
   hugo:
-    build: .
+    image: ghcr.io/samanthavbarron/site:main
     ports:
       - "80:80"
