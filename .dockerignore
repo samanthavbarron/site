@@ -1,0 +1,6 @@
+.git
+.github
+.devcontainer
+public/
+.hugo_build.lock
+.DS_Store
