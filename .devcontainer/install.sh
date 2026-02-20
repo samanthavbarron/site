@@ -6,18 +6,6 @@ if [ "$(id -u)" -ne 0 ]; then
     SUDO="sudo"
 fi
 
-# curl -fsSL https://get.docker.com | $SUDO sh
-# 
-# 
-# COMPOSE_VERSION=$(curl -fsSL https://api.github.com/repos/docker/compose/releases/latest | grep '"tag_name"' | sed 's/.*"tag_name": "\(.*\)".*/\1/')
-# $SUDO mkdir -p /usr/local/lib/docker/cli-plugins
-# curl -fsSL "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-linux-$(uname -m)" \
-#     | $SUDO tee /usr/local/lib/docker/cli-plugins/docker-compose >/dev/null
-# $SUDO chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
-# 
-# $SUDO service docker start
-
-
 HUGO_VERSION=$(curl -fsSL https://api.github.com/repos/gohugoio/hugo/releases/latest | grep '"tag_name"' | sed 's/.*"tag_name": "v\(.*\)".*/\1/')
 ARCH=$(uname -m)
 case "$ARCH" in
