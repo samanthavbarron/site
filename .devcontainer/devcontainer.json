@@ -2,7 +2,10 @@
     "name": "site",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "postCreateCommand": "./.devcontainer/install.sh",
-    "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+    "features": { 
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}, 
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
     "customizations": {
         "vscode": {
             "extensions": [
