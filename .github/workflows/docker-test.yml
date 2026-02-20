@@ -1,0 +1,58 @@
+name: Docker Smoke Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: site:test
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Start container
+        run: docker run -d --name site-test -p 80:80 site:test
+
+      - name: Wait for server to be ready
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost/ > /dev/null 2>&1; then
+              echo "Server is up"
+              exit 0
+            fi
+            echo "Waiting... ($i/30)"
+            sleep 2
+          done
+          echo "Server did not become ready in time"
+          docker logs site-test
+          exit 1
+
+      - name: Check HTTP 200 on homepage
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost/)
+          echo "HTTP status: $STATUS"
+          [ "$STATUS" = "200" ]
+
+      - name: Show container logs on failure
+        if: failure()
+        run: docker logs site-test
