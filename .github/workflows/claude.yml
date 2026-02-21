@@ -36,6 +36,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           assignee_trigger: "claude-bot"
+          show_full_output: true
           claude_args: |
             --model claude-opus-4-1-20250805
             --max-turns 20
