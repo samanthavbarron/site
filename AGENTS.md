@@ -147,10 +147,12 @@ Multiple agents may run in parallel against this repository. Without isolation, 
 2. **Do all work** inside the worktree directory (`.claude/worktrees/<feature-name>/`).
 3. **Commit and push** the feature branch from within the worktree.
 4. **Open a PR** from the feature branch back to `main`.
-5. **Clean up** the worktree after the PR is merged:
+5. **Clean up** the worktree after the PR is merged. Because this repo uses submodules, you must deinit them before removing the worktree:
    ```bash
+   git -C .claude/worktrees/<feature-name> submodule deinit --all --force
    git worktree remove .claude/worktrees/<feature-name>
    ```
+   If the worktree gets into a broken state (e.g. partially removed), run `git worktree prune` from the main working tree to clean up stale references.
 
 ### Rules
 
