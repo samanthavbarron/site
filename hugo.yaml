@@ -74,7 +74,7 @@ params:
     - name: bluesky
       url: https://bsky.app/profile/samantha.wiki
     - name: email
-      url: mailto:sam@sambarron.me
+      url: mailto:hello@samantha.wiki
     - name: googlescholar
       url: https://scholar.google.com/citations?user=2ak_k_UAAAAJ
     - name: linkedin
