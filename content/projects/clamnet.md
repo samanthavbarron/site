@@ -18,9 +18,9 @@ This post is intended to be a brief overview of how `ClamNet` has evolved over t
 
 The first iteration began with something like the [GL.iNet GL-A1300](https://www.amazon.com/GL-iNet-GL-A1300-Encrypted-Tethering-Pocket-Sized/dp/B0B4ZSR2PX/ref=sr_1_11?crid=2C0BHYRUUOVXS&keywords=gl.inet&qid=1705275144&sprefix=gl.in%2Caps%2C140&sr=8-11&th=1) in my apartment. I started with learning how to forward ports, assign static IP addresses, set up different subnets and firewall rules, etc.
 
-At some point I added a [GL.iNet GL-E750](https://www.amazon.com/GL-iNet-GL-E750-OpenWrt-WireGuard-Installed/dp/B08JP7YWPR/ref=sr_1_20?crid=2C0BHYRUUOVXS&keywords=gl.inet&qid=1705275144&sprefix=gl.in%2Caps%2C140&sr=8-20) mobile router with a Mint Mobile SIM card in it. I did this because I installed [GrapheneOS](https://grapheneos.org) on my phone because I started to get interested in digital privacy and security. I would connect my phone to the mobile router when I wanted to use data. Around this time I was using [QubesOS](https://www.qubes-os.org) as my main operating system. I found this very liberating from a digital privacy perspective, but that OS is not very well-suited for every-day use in my opinion.
+At some point I added a [GL.iNet GL-E750](https://www.amazon.com/GL-iNet-GL-E750-OpenWrt-WireGuard-Installed/dp/B08JP7YWPR/ref=sr_1_20?crid=2C0BHYRUUOVXS&keywords=gl.inet&qid=1705275144&sprefix=gl.in%2Caps%2C140&sr=8-20) mobile router with a Mint Mobile SIM card in it. I did this because I installed [GrapheneOS](https://grapheneos.org) on my phone because I started to get interested in digital privacy and security. I would connect my phone to the mobile router when I wanted to use data. Around this time I was using [QubesOS](https://www.qubes-os.org) as my main operating system. I found this liberating from a digital privacy perspective, but that OS is not very well-suited for every-day use in my opinion.
 
-This setup was incredible for my attention span and relationship with technology, but was ultimately not very usable for everyday use. I found it difficult to do things in everyday life without things being clunky or awkward.
+This setup was incredible for my attention span and relationship with technology, but was ultimately not usable for everyday use. I found it difficult to do things in everyday life without things being clunky or awkward.
 
 ![ClamNet V1](/images/clamnet_v1.png)
 
@@ -28,9 +28,9 @@ This setup was incredible for my attention span and relationship with technology
 
 At some point I repurposed the desktop running [QubesOS](https://www.qubes-os.org/)  into a server (which I named `pearl`) that sat in my closet. Unfortunately, my laptop was stolen around this point. I was too stubborn to buy a new one, and ended up configuring and working on `pearl` exclusively in a terminal on my iPad with [Blink.sh](https://blink.sh/) when setting up [ArchLinux](https://archlinux.org/). After a while I got a new laptop, switched to [Unraid](https://unraid.net/), and then [Ubuntu](https://ubuntu.com/).
 
-During this version I got more comfortable with the basics of networking and started using [Docker](https://www.docker.com/) containers for various services. I got really into Home Assistant and started to better understand firewalls in order to isolate the IOT devices from the more sensitive portions of my network. I also added a media stack. I also added a bunch of monitoring/observability services, some of which I ended up not using very much.
+During this version I got more comfortable with the basics of networking and started using [Docker](https://www.docker.com/) containers for various services. I got really into Home Assistant and started to better understand firewalls in order to isolate the IOT devices from the more sensitive portions of my network. I also added a media stack. I also added a bunch of monitoring/observability services, some of which I ended up not using much.
 
-Around this time I added a [Digital Ocean](http://digitalocean.com/) instance which hosted a couple public-facing services to isolate them from my home network. Initially this started more as a learning experience with not much functional purpose. But that quickly changed! I also tinkered around with some Cloudflare stuff, but didn't get very far with it.
+Around this time I added a [Digital Ocean](http://digitalocean.com/) instance which hosted a couple public-facing services to isolate them from my home network. Initially this started more as a learning experience with not much functional purpose. But that quickly changed! I also tinkered around with some Cloudflare stuff, but didn't get far with it.
 
 ![ClamNet V2](/images/clamnet_v2.png)
 

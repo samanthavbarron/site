@@ -21,7 +21,7 @@ How?
 
 If you do want to leave your phone at home, the solution is dead simple: Just leave your phone at home. Once you've left home, you're in the clear!
 
-But obviously, things get complicated if you find yourself in a situation where you need to use your phone. So then the question is: What are those situations? For my own life, this includes:
+Of course, things get complicated if you find yourself in a situation where you need to use your phone. So then the question is: What are those situations? For my own life, this includes:
 
 - I need to call 911
 - I need to use a map
@@ -30,7 +30,7 @@ But obviously, things get complicated if you find yourself in a situation where 
 
 I have found that all of these things are feasible with either an Apple Watch or iPad with cell service. It is more clunky for sure, but it works.
 
-You may say "Well you're still connected/online, that's cheating," which is reasonable. But it is too cumbersome to pull my iPad out of my bag and start scrolling, and my Apple Watch is very awkward to use. For me, these are high enough barriers so that I just don't bother. So mission accomplished!
+You may say "Well you're still connected/online, that's cheating," which is reasonable. But it is too cumbersome to pull my iPad out of my bag and start scrolling, and my Apple Watch is awkward to use. For me, these are high enough barriers so that I just don't bother. So mission accomplished!
 
 # Is this realistic?
 
