@@ -24,10 +24,11 @@
         "spelling": true,
         "terms": true,
         "typography": true,
+        "typography.diacritical_marks": false,
         "typography.symbols.curly_quotes": false,
         "typography.symbols.multiplication": false,
         "uncomparables": true,
         "weasel_words": true,
-        "weasel_words.very": false
+        "weasel_words.very": true
     }
 }

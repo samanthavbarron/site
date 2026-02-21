@@ -25,7 +25,7 @@ Here are a few entry points I've found to doing this:
   - Hint: [Substack Publications have RSS feeds](https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication)
 - Browse [now.garden](https://now.garden/)
 - Find people/communities on [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network))
-- **Contribute!!!**
+- **Contribute!**
   - Make an [Obsidian](https://obsidian.md/) page with [Publish](https://obsidian.md/publish)
   - Make an [omg.lol](https://omg.lol/) page
 

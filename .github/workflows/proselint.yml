@@ -25,5 +25,4 @@ jobs:
         run: pip install proselint
 
       - name: Run proselint
-        continue-on-error: true
         run: proselint check --config .proselintrc.json content/**/*.md

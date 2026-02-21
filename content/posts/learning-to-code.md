@@ -46,7 +46,7 @@ I think the most important lessons I've learned are:
 - Clean code is a good route to writing better code
 - Simplify, simplify, simplify
 - My gold standard for whether or not I understand something in math/physics is whether I can simulate it or express it in a program
-- Programming-adjacent skills (e.g. version control, IDEs, CI/CD) are important for working in industry, and very underrated in academia
+- Programming-adjacent skills (e.g. version control, IDEs, CI/CD) are important for working in industry, and underrated in academia
 
 What I would have done differently:
 

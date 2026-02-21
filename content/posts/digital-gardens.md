@@ -11,7 +11,7 @@ I've found a couple interesting places (be they blogs, digital gardens, or other
 - [Gwern.net](https://gwern.net)
 - [nLab](https://ncatlab.org/nlab/show/HomePage)
 - [Manu](https://manuelmoreale.com/)
-- [32-Bit Cafe](https://32bit.cafe)
+- [32-Bit Café](https://32bit.cafe)
 - [Notes ‒ Szymon Kaliski|Szymon Kaliski](https://szymonkaliski.com/notes/)
 - [The Yesterweb](https://yesterweb.org)
 - [The Missing Premise](https://publish.obsidian.md/the-missing-premise/Blog/The+Missing+Premise)
