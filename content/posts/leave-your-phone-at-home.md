@@ -8,9 +8,9 @@ I started leaving my phone at home, and I think you can too!
 
 I recently made some changes to how I interact with technology recently, and so far it's been a positive experience. In this post, I will make the case for
 
-    why you should consider leaving your phone at home as much as possible, and
-    that the amount of times when this is feasible is potentially more than you might expect
-    leaving your phone at home is much more feasible if you have a smart watch or large tablet with cell service
+- why you should consider leaving your phone at home as much as possible, and
+- that the amount of times when this is feasible is potentially more than you might expect
+- leaving your phone at home is much more feasible if you have a smart watch or large tablet with cell service
 
 I would like to preface all of this with saying: Given your life circumstances, parts of this may not be feasible. I will speak from my experiences, and I hope you find parts of this that fit into your own life.
 
@@ -23,10 +23,10 @@ If you do want to leave your phone at home, the solution is dead simple: Just le
 
 But obviously, things get complicated if you find yourself in a situation where you need to use your phone. So then the question is: What are those situations? For my own life, this includes:
 
-    I need to call 911
-    I need to use a map
-    I need to reach my kids/spouse
-    I don't have either, but I'll include this anyway
+- I need to call 911
+- I need to use a map
+- I need to reach my kids/spouse
+- I don't have either, but I'll include this anyway
 
 I have found that all of these things are feasible with either an Apple Watch or iPad with cell service. It is more clunky for sure, but it works.
 
@@ -42,10 +42,10 @@ As an exercise, give it a shot a couple times. Maybe for a short, straightforwar
 
 In my case, I would say absolutely yes. In the past three weeks after starting to do this, I have taken my phone out of my apartment once, and most days I don't use it for more than 5 min/day. Overall, I have found:
 
-    I really do not need it as much as I thought I would
-    I have not found myself in a situation where I wished I had it
-    I have been less stressed/anxious
-    I have found that my overall level of focus has improved
+- I really do not need it as much as I thought I would
+- I have not found myself in a situation where I wished I had it
+- I have been less stressed/anxious
+- I have found that my overall level of focus has improved
 
 So if this is something that's feasible for you, give it a shot! It's as easy as walking out the door.
 
