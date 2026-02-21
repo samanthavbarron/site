@@ -19,7 +19,7 @@ I would like to preface all of this with saying: Given your life circumstances, 
 The human experience is constantly being bombarded with information, communication, updates, notifications, etc. [I think this is bad](https://samantha.wiki/phones-bad/). Ask yourself: "At the end of my life, what are the chances I will say 'I wish I spent more time on my phone'?" Probably not.
 How?
 
-If you do want to leave your phone at home, the solution is dead simple: Just leave your phone at home. Once you've left home, you're in the clear.
+If you do want to leave your phone at home, the solution is dead simple: Just leave your phone at home. Once you've left home, you're in the clear!
 
 Of course, things get complicated if you find yourself in a situation where you need to use your phone. So then the question is: What are those situations? For my own life, this includes:
 
@@ -30,7 +30,7 @@ Of course, things get complicated if you find yourself in a situation where you 
 
 I have found that all of these things are feasible with either an Apple Watch or iPad with cell service. It is more clunky for sure, but it works.
 
-You may say "Well you're still connected/online, that's cheating," which is reasonable. But it is too cumbersome to pull my iPad out of my bag and start scrolling, and my Apple Watch is awkward to use. For me, these are high enough barriers so that I just don't bother. So mission accomplished.
+You may say "Well you're still connected/online, that's cheating," which is reasonable. But it is too cumbersome to pull my iPad out of my bag and start scrolling, and my Apple Watch is awkward to use. For me, these are high enough barriers so that I just don't bother. So mission accomplished!
 
 # Is this realistic?
 
@@ -47,7 +47,7 @@ In my case, I would say absolutely yes. In the past three weeks after starting t
 - I have been less stressed/anxious
 - I have found that my overall level of focus has improved
 
-So if this is something that's feasible for you, give it a shot. It's as easy as walking out the door.
+So if this is something that's feasible for you, give it a shot! It's as easy as walking out the door.
 
 # Related
 

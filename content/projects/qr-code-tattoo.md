@@ -30,9 +30,9 @@ Getting the redirect to change isn't interesting from a technical perspective, b
 
 # Choosing an Artist
 
-Finally, I needed a tattoo artist that I trusted. I ended up getting two floral tattoos that have fine lines on them so I could (a) talk to the artist and see if he's up for trying to work through this with me and (b) watch him do linework with fine lines. I did also want the tattoos independent of this, of course.
+Finally, I needed a tattoo artist that I trusted. I ended up getting two floral tattoos that have fine lines on them so I could (a) talk to the artist and see if he's up for trying to work through this with me and (b) watch him do linework with fine lines. I did also want the tattoos independent of this, of course!
 
-So I ended up getting it, and it worked. The guy tattooing me thought it was funny when he tested it for the first time and when he scanned it and it opened [his Instagram](https://www.instagram.com/thepapachicken/). I think he was more nervous than I was that it was going to work when he actually tried to scan it.
+So I ended up getting it, and it worked! The guy tattooing me thought it was funny when he tested it for the first time and when he scanned it and it opened [his Instagram](https://www.instagram.com/thepapachicken/). I think he was more nervous than I was that it was going to work when he actually tried to scan it.
 
 # Final Thoughts
 
