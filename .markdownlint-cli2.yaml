@@ -1,0 +1,18 @@
+globs:
+  - "content/**/*.md"
+
+config:
+  # Disable line length — prose flows naturally
+  MD013: false
+
+  # Disable single H1 — pages use multiple H1s as sections
+  MD025: false
+
+  # Disable inline HTML — Hugo shortcodes use raw HTML
+  MD033: false
+
+  # Disable first-line heading — files start with frontmatter
+  MD041: false
+
+  # Disable duplicate headings — blog posts may reuse heading text
+  MD024: false
