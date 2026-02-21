@@ -13,5 +13,5 @@ CMD ["hugo", "server", \
   "--bind", "0.0.0.0", \
   "--port", "80", \
   "--baseURL", "https://samantha.wiki/", \
-  "--appendPort", "false" \
+  "--appendPort=false" \
 ]
