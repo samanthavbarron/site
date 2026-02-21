@@ -93,8 +93,7 @@ params:
   showtoc: false
   tocopen: false
 
-  author:
-    name: Samantha Barron
+  author: Samantha Barron
 
   fuseOpts:
     isCaseSensitive: false
