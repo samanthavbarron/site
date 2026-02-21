@@ -12,4 +12,5 @@ Eventually we moved off talking on Last.fm, and decided to share MP3s in a share
 Eventually we fell out of contact, but I think about it often, and it still makes me happy thinking about it.
 
 Related:
+
 - [IndieWeb Carnival Roundup on Digital Relationships](https://manuelmoreale.com/indieweb-carnival-roundup)

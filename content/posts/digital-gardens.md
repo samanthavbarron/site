@@ -7,6 +7,7 @@ draft: false
 I'm thinking about Digital Gardens and alternate forms of social networks lately.
 
 I've found a couple interesting places (be they blogs, digital gardens, or other digital spaces) I've found on the [WWW](/posts/surfing-the-web):
+
 - [Gwern.net](https://gwern.net)
 - [nLab](https://ncatlab.org/nlab/show/HomePage)
 - [Manu](https://manuelmoreale.com/)
