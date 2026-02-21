@@ -64,7 +64,7 @@ FROM ghcr.io/hugomods/hugo:base
 WORKDIR /src
 COPY . .
 EXPOSE 80
-CMD hugo server --bind 0.0.0.0 --port 80 --baseURL http://localhost --appendPort=false
+CMD hugo server --bind 0.0.0.0 --port 80 --appendPort=false
 ```
 
 The image copies all site source into `/src` and runs `hugo server` at startup. The host's reverse proxy is responsible for routing external traffic to the container.
