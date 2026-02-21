@@ -130,6 +130,39 @@ To use: open the repo in VS Code and select "Reopen in Container".
 
 ---
 
+## Multi-Agent Workflow: Git Worktrees
+
+**IMPORTANT**: When working on new features or any non-trivial changes, agents **must** use git worktrees to avoid conflicts with other agents that may be editing files concurrently.
+
+### Why worktrees are required
+
+Multiple agents may run in parallel against this repository. Without isolation, concurrent edits to the same files will cause merge conflicts, lost work, or corrupted state. Git worktrees give each agent a full, isolated copy of the repo on its own branch.
+
+### How to use worktrees
+
+1. **Create a worktree** before starting work on a new feature or change:
+   ```bash
+   git worktree add .claude/worktrees/<feature-name> -b <feature-branch> main
+   ```
+2. **Do all work** inside the worktree directory (`.claude/worktrees/<feature-name>/`).
+3. **Commit and push** the feature branch from within the worktree.
+4. **Open a PR** from the feature branch back to `main`.
+5. **Clean up** the worktree after the PR is merged:
+   ```bash
+   git worktree remove .claude/worktrees/<feature-name>
+   ```
+
+### Rules
+
+- **Never commit directly to `main`** when working as an agent alongside other agents. Always use a feature branch in a worktree.
+- **One worktree per feature/task** — do not reuse worktrees across unrelated tasks.
+- **Initialize submodules** in the new worktree if needed:
+  ```bash
+  git -C .claude/worktrees/<feature-name> submodule update --init
+  ```
+
+---
+
 ## Common Tasks
 
 **Build the site locally (without Docker):**
