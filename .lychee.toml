@@ -1,0 +1,37 @@
+# lychee link checker configuration
+# https://lychee.cli.rs/usage/config/
+
+# Check both internal and external links
+include_mail = false
+
+# Timeout per request (seconds)
+timeout = 30
+
+# Max concurrent requests
+max_concurrency = 8
+
+# Accept these status codes as valid
+accept = [200, 204, 206, 301, 302, 307, 308, 429]
+
+# Exclude patterns (adjust as needed)
+exclude = [
+  # Favicon/icon assets referenced by PaperMod theme but not present on the
+  # live site — these are browser-requested resources, not content links
+  "^https://samantha\\.wiki/(apple-touch-icon\\.png|favicon(-(16x16|32x32))?\\.png|favicon\\.ico|safari-pinned-tab\\.svg)$",
+  # Localhost / dev-only links
+  "^http://localhost",
+  "^http://127\\.0\\.0\\.1",
+  # mailto links
+  "^mailto:",
+  # Sites that block automated requests (403/429)
+  "linkedin\\.com",
+  "scholar\\.google\\.com",
+  "journals\\.aps\\.org",
+  "reddit\\.com",
+  "instagram\\.com",
+  "tandfonline\\.com",
+]
+
+# Skip private/internal IPs
+exclude_private = true
+exclude_loopback = true
