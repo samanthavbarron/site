@@ -30,15 +30,19 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Install Claude Code
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash -s -- 2.1.18
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_MODEL: claude-opus-4-6
         with:
+          path_to_claude_code_executable: /home/runner/.local/bin/claude
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           assignee_trigger: "claude-bot"
           show_full_output: true
-          claude_args: |
-            --model claude-opus-4-1-20250805
-            --max-turns 20
-            --allowedTools "Bash(ls:*),Bash(wc:*),Bash(docker:*)"
-            --system-prompt "Read AGENTS.md before proceeding."
+          claude_args: --allowedTools "Bash(ls:*),Bash(wc:*),Bash(docker:*)" --system-prompt "Read AGENTS.md before proceeding."

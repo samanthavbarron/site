@@ -15,6 +15,9 @@ curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/
 sudo install -m 0755 "$TMP_DIR/hugo" /usr/local/bin/hugo
 rm -rf "$TMP_DIR"
 
+# Claude Code
+curl -fsSL https://claude.ai/install.sh | bash
+
 ### DOCKER
 # Add Docker's official GPG key:
 sudo apt update
@@ -33,5 +36,3 @@ EOF
 # Install
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin tmux
-
-curl -fsSL https://claude.ai/install.sh | bash
