@@ -7,14 +7,14 @@ Sometimes I encounter something I need to do and I think "I'm gonna need my big 
 
 I think the size of your daily internet plays an important role in how we integrate it into our behavior. I don't think it's a stretch to claim that phones hit that sweet spot of accessibility that caused everyone to be glued to our phones.
 
-Any larger and you're approaching a tablet/laptop, and people are very unlikely to pull out a laptop between stops on the train. Any smaller and you get a smart watch, but they haven't usurped the phone in how we use them.
+Any larger and you're approaching a tablet/laptop, and people are unlikely to pull out a laptop between stops on the train. Any smaller and you get a smart watch, but they haven't usurped the phone in how we use them.
 
 I think the smart watch didn't usurp the smart phone for a few reasons
 
 - it's still infeasible to only have a smart watch and still do things
 - they're physically clumsy to use
 - the interfaces feel like they evolved from phones  
-    I like these things about smart watches because it means it's kind of similar to a dumb phone, and I don't have the urge to be on it constantly (I very much hope this does not change with AI).
+    I like these things about smart watches because it means it's kind of similar to a dumb phone, and I don't have the urge to be on it constantly (I hope this does not change with AI).
 
 So given all this, this is how I'm trying to use my various internets now:
 
