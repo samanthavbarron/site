@@ -12,7 +12,17 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
+  smoke-test:
+    uses: ./.github/workflows/docker-test.yml
+  markdown-lint:
+    uses: ./.github/workflows/markdown-lint.yml
+  proselint:
+    uses: ./.github/workflows/proselint.yml
+  link-check:
+    uses: ./.github/workflows/link-check.yml
+
   build:
+    needs: [smoke-test, markdown-lint, proselint, link-check]
     runs-on: ubuntu-latest
     permissions:
       contents: read
