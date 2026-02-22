@@ -4,8 +4,6 @@ date: 2024-09-22T01:44:38Z
 draft: false
 ---
 
-#### intentional lint failure
-
 I'm thinking about Digital Gardens and alternate forms of social networks lately.
 
 I've found a couple interesting places (be they blogs, digital gardens, or other digital spaces) I've found on the [WWW](/posts/surfing-the-web):
