@@ -32,8 +32,11 @@ jobs:
 
       - name: Install Claude Code
         run: |
-          curl -fsSL https://claude.ai/install.sh | bash -s -- 2.1.18
-          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          npm install -g @anthropic-ai/claude-code@2.1.18
+          CLAUDE_BIN=$(which claude)
+          echo "CLAUDE_PATH=$CLAUDE_BIN" >> $GITHUB_ENV
+          echo "Claude binary location: $CLAUDE_BIN"
+          claude --version
 
       - name: Run Claude Code
         id: claude
@@ -41,8 +44,8 @@ jobs:
         env:
           ANTHROPIC_MODEL: claude-opus-4-6
         with:
-          path_to_claude_code_executable: /home/runner/.local/bin/claude
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          path_to_claude_code_executable: ${{ env.CLAUDE_PATH }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           assignee_trigger: "claude-bot"
           show_full_output: true
           claude_args: --allowedTools "Bash(ls:*),Bash(wc:*),Bash(docker:*)" --system-prompt "Read AGENTS.md before proceeding."
