@@ -165,6 +165,48 @@ Multiple agents may run in parallel against this repository. Without isolation, 
 
 ---
 
+## Custom Layouts
+
+The site overrides several PaperMod theme templates in `layouts/`. Do not edit theme files in `themes/PaperMod/` directly — always override in `layouts/`.
+
+### Homepage (`layouts/index.html`)
+
+The homepage renders the PaperMod profile partial (title, subtitle, social icons, buttons) followed by three preview sections showing the 3 most recent entries each, in this order:
+
+1. **Papers** — with thumbnail, authors, and journal/date
+2. **Projects** — with thumbnail, summary, and metadata
+3. **Posts** — with summary and metadata
+
+Each section has a heading that links to the full section page, plus a "View all" link. The profile's `min-height` is overridden to `auto` so the preview sections appear directly below the buttons without a full-viewport gap.
+
+### Section list pages
+
+Each content type has its own list template:
+
+- `layouts/papers/list.html` — papers with 200px thumbnails, authors, journal info
+- `layouts/projects/list.html` — projects with 120px thumbnails, summaries
+- `layouts/posts/list.html` — posts based on the theme default list template
+
+### Color cycling
+
+All list pages (including homepage previews) cycle entry titles through 7 Catppuccin accent colors using `nth-child(7n+N)` selectors and CSS variables defined in `assets/css/extended/nav-colors.css`:
+
+```
+--nav-about (Mauve), --nav-cv (Pink), --nav-now (Sapphire),
+--nav-uses (Green), --nav-search (Peach), --nav-tags (Lavender),
+--nav-feedback (Flamingo)
+```
+
+These same variables are used to color the nav menu items and paper titles consistently across the site.
+
+### Content architecture
+
+- **Papers**: Defined in `assets/data/papers.yaml` and dynamically generated into Hugo pages by `content/papers/_content.gotmpl`. Each entry has `title`, `date`, `url`, `image`, `journal`, `authors`, `tags`, and `content` fields.
+- **Projects**: Standard markdown files in `content/projects/` with front matter including `image`, `summary`, and `links` (array of `{name, icon, url}`).
+- **Posts**: Standard markdown files in `content/posts/` with basic front matter (`title`, `date`, `draft`).
+
+---
+
 ## Common Tasks
 
 **Build the site locally (without Docker):**
