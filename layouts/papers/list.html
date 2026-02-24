@@ -1,0 +1,100 @@
+{{- define "main" }}
+
+<style>
+  .paper-entry.post-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  .paper-entry .paper-thumb {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paper-entry .paper-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--radius);
+    object-fit: contain;
+  }
+
+  .paper-entry .paper-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .paper-entry .paper-thumb {
+      width: 80px;
+      height: 80px;
+    }
+  }
+</style>
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{ .Title }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- range $index, $page := $pages }}
+<article class="post-entry paper-entry">
+  {{- with .Params.image }}
+  <div class="paper-thumb">
+    <img loading="lazy" src="{{ . }}" alt="{{ $page.Title }}">
+  </div>
+  {{- end }}
+  <div class="paper-details">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">
+        {{- .Title }}
+        {{- if .Draft }}
+        <span class="entry-hint" title="Draft">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          </svg>
+        </span>
+        {{- end }}
+      </h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

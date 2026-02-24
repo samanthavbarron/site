@@ -1,6 +1,7 @@
 - title: Fast high-fidelity entangling gates for spin qubits in Si double quantum dots
   date: 2019-07-09
   url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.035304
+  image: https://samantha.wiki/images/si-qd-pulse.png
   journal: Physical Review B
   content: |
     Implementing high-fidelity two-qubit gates in single-electron spin qubits in silicon double quantum dots is still a major challenge. In this work we employ analytical methods to design control pulses that generate high-fidelity entangling gates for quantum computers based on this platform. Using realistic parameters and initially assuming a noise-free environment, we present simple control pulses that generate cnot, cphase, and cz gates with average fidelities greater than 99.99% and gate times as short as 45 ns. Moreover, using the local invariants of the system's evolution operator, we show that a simple square pulse generates a cnot gate in less than 27 ns and with a fidelity greater than 99.99%. Last, we use the same analytical methods to generate two-qubit gates locally equivalent to √CNOT and √CZ that are used to implement simple two-piece pulse sequences that produce high-fidelity cnot and cz gates in the presence of low-frequency noise.
@@ -17,6 +18,7 @@
 - title: Efficient symmetry-preserving state preparation circuits for the variational quantum eigensolver algorithm
   date: 2020-01-28
   url: https://www.nature.com/articles/s41534-019-0240-1
+  image: https://samantha.wiki/images/symm-gate.png
   journal: npj Quantum Information
   content: |
     The variational quantum eigensolver is one of the most promising approaches for performing chemistry simulations using noisy intermediate-scale quantum (NISQ) processors. The efficiency of this algorithm depends crucially on the ability to prepare multi-qubit trial states on the quantum processor that either include, or at least closely approximate, the actual energy eigenstates of the problem being simulated while avoiding states that have little overlap with them. Symmetries play a central role in determining the best trial states. Here, we present efficient state preparation circuits that respect particle number, total spin, spin projection, and time-reversal symmetries. These circuits contain the minimal number of variational parameters needed to fully span the appropriate symmetry subspace dictated by the chemistry problem while avoiding all irrelevant sectors of Hilbert space. We show how to construct these circuits for arbitrary numbers of orbitals, electrons, and spin quantum numbers, and we provide explicit decompositions and gate counts in terms of standard gate sets in each case. We test our circuits in quantum simulations of the H2 and LiH molecules and find that they outperform standard state preparation methods in terms of both accuracy and circuit depth.
@@ -34,6 +36,7 @@
 - title: Microwave-based arbitrary cphase gates for transmon qubits
   date: 2020-02-20
   url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.054508
+  image: https://samantha.wiki/images/cphase-levels.png
   journal: Physical Review B
   content: |
     Superconducting transmon qubits are of great interest for quantum computing and quantum simulation. A key component of quantum chemistry simulation algorithms is breaking up the evolution into small steps, which naturally leads to the need for nonmaximally entangling, arbitrary CPHASE gates. Here we design such microwave-based gates using an analytically solvable approach leading to smooth, simple pulses. We use the local invariants of the evolution operator in SU(4) to develop a method of constructing pulse protocols, which allows for the continuous tuning of the phase. We find cphase fidelities of more than 0.999 and gate times as low as 100ns.
@@ -49,6 +52,7 @@
 - title: Measurement Error Mitigation for Variational Quantum Algorithms
   date: 2020-10-16
   url: https://arxiv.org/abs/2010.08520
+  image: https://samantha.wiki/images/meas-em.png
   journal: arXiv
   content: |
     Variational Quantum Algorithms (VQAs) are a promising application for near-term quantum processors, however the quality of their results is greatly limited by noise. For this reason, various error mitigation techniques have emerged to deal with noise that can be applied to these algorithms. Recent work introduced a technique for mitigating expectation values against correlated measurement errors that can be applied to measurements of 10s of qubits. We apply these techniques to VQAs and demonstrate its effectiveness in improving estimates to the cost function. Moreover, we use the data resulting from this technique to experimentally characterize measurement errors in terms of the device connectivity on devices of up to 20 qubits. These results should be useful for better understanding the near-term potential of VQAs as well as understanding the correlations in measurement errors on large, near-term devices. 
@@ -60,8 +64,9 @@
     - variational-quantum-algorithms
 - title: Benchmarking Quantum Chemistry Computations with Variational, Imaginary Time Evolution, and Krylov Space Solver Algorithms 
   date: 2021-05-07
-  url: 
-  journal: 
+  url: https://arxiv.org/abs/2102.05511
+  image: https://samantha.wiki/images/kh-diss-curve.png
+  journal: arXiv
   content: |
     Quantum chemistry is a key application area for noisy-intermediate scale quantum (NISQ) devices, and therefore serves as an important benchmark for current and future quantum computer performance. Previous benchmarks in this field have focused on variational methods for computing ground and excited states of various molecules, including a benchmarking suite focused on the performance of computing ground states for alkali-hydrides under an array of error mitigation methods. State-of-the-art methods to reach chemical accuracy in hybrid quantum-classical electronic structure calculations of alkali hydride molecules on NISQ devices from IBM are outlined here. It is demonstrated how to extend the reach of variational eigensolvers with symmetry preserving Ansätze. Next, it is outlined how to use quantum imaginary time evolution and Lanczos as a complementary method to variational techniques, highlighting the advantages of each approach. Finally, a new error mitigation method is demonstrated which uses systematic error cancellation via hidden inverse gate constructions, improving the performance of typical variational algorithms. These results show that electronic structure calculations have advanced rapidly, to routine chemical accuracy for simple molecules, from their inception on quantum computers a few short years ago, and they point to further rapid progress to larger molecules as the power of NISQ devices grows.
   authors:
@@ -79,6 +84,7 @@
 - title: A universal quantum gate set for transmon qubits with strong ZZ interactions
   date: 2021-03-23
   url: https://arxiv.org/abs/2103.12305
+  image: https://samantha.wiki/images/transmon-ptm.png
   journal: arXiv
   content: |
     High-fidelity single- and two-qubit gates are essential building blocks for a fault-tolerant quantum computer. While there has been much progress in suppressing single-qubit gate errors in superconducting qubit systems, two-qubit gates still suffer from error rates that are orders of magnitude higher. One limiting factor is the residual ZZ-interaction, which originates from a coupling between computational states and higher-energy states. While this interaction is usually viewed as a nuisance, here we experimentally demonstrate that it can be exploited to produce a universal set of fast single- and two-qubit entangling gates in a coupled transmon qubit system. To implement arbitrary single-qubit rotations, we design a new protocol called the two-axis gate that is based on a three-part composite pulse. It rotates a single qubit independently of the state of the other qubit despite the strong ZZ-coupling. We achieve single-qubit gate fidelities as high as 99.1% from randomized benchmarking measurements. We then demonstrate both a CZ gate and a CNOT gate. Because the system has a strong ZZ-interaction, a CZ gate can be achieved by letting the system freely evolve for a gate time tg=53.8 ns. To design the CNOT gate, we utilize an analytical microwave pulse shape based on the SWIPHT protocol for realizing fast, low-leakage gates. We obtain fidelities of 94.6% and 97.8% for the CNOT and CZ gates respectively from quantum progress tomography. 
@@ -105,6 +111,7 @@
 - title: "Qubit-ADAPT-VQE: An Adaptive Algorithm for Constructing Hardware-Efficient Ansätze on a Quantum Processor"
   date: 2021-04-28
   url: https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.020310
+  image: https://samantha.wiki/images/qubit-adapt-conv.png
   journal: PRX Quantum
   content: |
     Quantum simulation, one of the most promising applications of a quantum computer, is currently being explored intensely using the variational quantum eigensolver. The feasibility and performance of this algorithm depend critically on the form of the wave-function ansatz. Recently in Ref. [Nat. Commun. 10, 3007 (2019)], an algorithm termed ADAPT-VQE was introduced to build system-adapted ansätze with substantially fewer variational parameters compared to other approaches. This algorithm relies heavily on a predefined operator pool with which it builds the ansatz. However, Ref. [Nat. Commun. 10, 3007 (2019)] did not provide a prescription for how to select the pool, how many operators it must contain, or whether the resulting ansatz will succeed in converging to the ground state. In addition, the pool used in that work leads to state-preparation circuits that are too deep for a practical application on near-term devices. Here, we address all these key outstanding issues of the algorithm. We present a hardware-efficient variant of ADAPT-VQE that drastically reduces circuit depths using an operator pool that is guaranteed to contain the operators necessary to construct exact ansätze. Moreover, we show that the minimal pool size that achieves this scales linearly with the number of qubits. Through numerical simulations on H4, LiH and H6, we show that our algorithm ("qubit-ADAPT") reduces the circuit depth by an order of magnitude while maintaining the same accuracy as the original ADAPT-VQE. A central result of our approach is that the additional measurement overhead of qubit-ADAPT compared to fixed-ansatz variational algorithms scales only linearly with the number of qubits. Our work provides a crucial step forward in running algorithms on near-term quantum devices.
@@ -122,6 +129,7 @@
   date: 2021-09-01
   url: https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.034003
   journal: Physical Review Applied
+  image: https://samantha.wiki/images/mit-comb.png
   content: |
     One of the most promising applications of noisy intermediate-scale quantum computers is the simulation of molecular Hamiltonians using the variational quantum eigensolver (VQE). We show that encoding symmetries of the simulated Hamiltonian in the VQE ansatz reduces both classical and quantum resources compared to other widely available ansatze. Through simulations of the H2 molecule and of a Heisenberg model on a two-dimensional lattice, we verify that these improvements persist in the presence of noise. This is done using both real IBM devices and classical simulations. We also demonstrate how these techniques can be used to find molecular excited states of various symmetries using a noisy processor. We use error-mitigation techniques to further improve the quality of our results.
   authors:
@@ -137,6 +145,7 @@
 - title: Gate-free state preparation for fast variational quantum eigensolver simulations
   date: 2021-11-27
   url: https://www.nature.com/articles/s41534-021-00493-0
+  image: https://samantha.wiki/images/ctrl-vqe-diss.png
   journal: npj Quantum Information
   content: |
     The variational quantum eigensolver is currently the flagship algorithm for solving electronic structure problems on near-term quantum computers. The algorithm involves implementing a sequence of parameterized gates on quantum hardware to generate a target quantum state, and then measuring the molecular energy. Due to finite coherence times and gate errors, the number of gates that can be implemented remains limited. In this work, we propose an alternative algorithm where device-level pulse shapes are variationally optimized for the state preparation rather than using an abstract-level quantum circuit. In doing so, the coherence time required for the state preparation is drastically reduced. We numerically demonstrate this by directly optimizing pulse shapes which accurately model the dissociation of H2 and HeH+, and we compute the ground state energy for LiH with four transmons where we see reductions in state preparation times of roughly three orders of magnitude compared to gate-based strategies.
@@ -153,6 +162,7 @@
 - title: Preparing Bethe Ansatz Eigenstates on a Quantum Computer
   date: 2021-11-09
   url: https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040329
+  image: https://samantha.wiki/images/faucet.png
   journal: PRX Quantum
   content: |
     Several quantum many-body models in one dimension possess exact solutions via the Bethe ansatz method, which has been highly successful for understanding their behavior. Nevertheless, there remain physical properties of such models for which analytic results are unavailable and which are also not well described by approximate numerical methods. Preparing Bethe ansatz eigenstates directly on a quantum computer would allow straightforward extraction of these quantities via measurement. We present a quantum algorithm for preparing Bethe ansatz eigenstates of the spin-1/2 XXZ spin chain that correspond to real-valued solutions of the Bethe equations. The algorithm is polynomial in the number of T gates and the circuit depth, with modest constant prefactors. Although the algorithm is probabilistic, with a success rate that decreases with increasing eigenstate energy, we employ amplitude amplification to boost the success probability. The resource requirements for our approach are lower than for other state-of-the-art quantum simulation algorithms for small error-corrected devices and thus may offer an alternative and computationally less demanding demonstration of quantum advantage for physically relevant problems.
@@ -167,6 +177,7 @@
 - title: Adaptive quantum approximate optimization algorithm for solving combinatorial problems on a quantum computer
   date: 2022-07-11
   url: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.033029
+  image: https://samantha.wiki/images/adapt-qaoa.png
   journal: Physical Review Research
   content: |
     The quantum approximate optimization algorithm (QAOA) is a hybrid variational quantum-classical algorithm that solves combinatorial optimization problems. While there is evidence suggesting that the fixed form of the standard QAOA Ansatz is not optimal, there is no systematic approach for finding better Ansätze. We address this problem by developing an iterative version of QAOA that is problem tailored, and which can also be adapted to specific hardware constraints. We simulate the algorithm on a class of Max-Cut graph problems and show that it converges much faster than the standard QAOA, while simultaneously reducing the required number of CNOT gates and optimization parameters. We provide evidence that this speedup is connected to the concept of shortcuts to adiabaticity.
@@ -183,6 +194,7 @@
 - title: Provable bounds for noise-free expectation values computed from noisy samples
   date: 2024-11-01
   url: https://www.nature.com/articles/s43588-024-00709-1
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs43588-024-00709-1/MediaObjects/43588_2024_709_Fig2_HTML.png
   journal: Nature Computational Science
   content: |
     Quantum computing has emerged as a powerful computational paradigm capable of solving problems beyond the reach of classical computers. However, today’s quantum computers are noisy, posing challenges to obtaining accurate results. Here, we explore the impact of noise on quantum computing, focusing on the challenges in sampling bit strings from noisy quantum computers and the implications for optimization and machine learning. We formally quantify the sampling overhead to extract good samples from noisy quantum computers and relate it to the layer fidelity, a metric to determine the performance of noisy quantum processors. Further, we show how this allows us to use the conditional value at risk of noisy samples to determine provable bounds on noise-free expectation values. We discuss how to leverage these bounds for different algorithms and demonstrate our findings through experiments on real quantum computers involving up to 127 qubits. The results show strong alignment with theoretical predictions.
@@ -201,6 +213,7 @@
 - title: Bounding the systematic error in quantum error mitigation due to model violation
   date: 2024-08-20
   url: https://arxiv.org/abs/2408.10985
+  image: https://samantha.wiki/images/model-violation.png
   journal: arXiv
   content: |
     Quantum error mitigation is a promising route to achieving quantum utility, and potentially quantum advantage in the near-term. Many state-of-the-art error mitigation schemes use knowledge of the errors in the quantum processor, which opens the question to what extent inaccuracy in the error model impacts the performance of error mitigation. In this work, we develop a methodology to efficiently compute upper bounds on the impact of error-model inaccuracy in error mitigation. Our protocols require no additional experiments, and instead rely on comparisons between the error model and the error-learning data from which the model is generated. We demonstrate the efficacy of our methodology by deploying it on an IBM Quantum superconducting qubit quantum processor, and through numerical simulation of standard error models. We show that our estimated upper bounds are typically close to the worst observed performance of error mitigation on random circuits. Our methodology can also be understood as an operationally meaningful metric to assess the quality of error models, and we further extend our methodology to allow for comparison between error models. Finally, contrary to what one might expect we show that observable error in noisy layered circuits of sufficient depth is not always maximized by a Clifford circuit, which may be of independent interest. 
@@ -220,6 +233,7 @@
 - title: Scaling adaptive quantum simulation algorithms via operator pool tiling
   date: 2024-02-16
   url: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.L012030
+  image: https://samantha.wiki/images/tiling.png
   journal: Physical Review Research
   content: |
     Adaptive variational quantum simulation algorithms use information from a quantum computer to dynamically create optimal trial wave functions for a given problem Hamiltonian. A key ingredient in these algorithms is a predefined operator pool from which trial wave functions are constructed. Finding suitable pools is critical for the efficiency of the algorithm as the problem size increases. Here, we present a technique called operator pool tiling that facilitates the construction of problem-tailored pools for arbitrarily large problem instances. By first performing an Adaptive Derivative-Assembled Problem-Tailored Ansatz Variational Quantum Eigensolver (ADAPT-VQE) calculation on a smaller instance of the problem using a large, but computationally inefficient, operator pool, we extract the most relevant operators and use them to design more efficient pools for larger instances. We demonstrate the method here on strongly correlated quantum spin models in one and two dimensions, finding that ADAPT automatically finds a highly effective ansatz for these systems. Given that many problems, such as those arising in condensed matter physics, have a naturally repeating lattice structure, we expect the pool tiling method to be a widely applicable technique apt for such systems.
@@ -235,6 +249,7 @@
 - title: Adaptive, problem-tailored variational quantum eigensolver mitigates rough parameter landscapes and barren plateaus
   date: 2023-03-01
   url: https://www.nature.com/articles/s41534-023-00681-0
+  image: https://samantha.wiki/images/burrowing.png
   journal: npj Quantum Information
   content: |
     Variational quantum eigensolvers (VQEs) represent a powerful class of hybrid quantum-classical algorithms for computing molecular energies. Various numerical issues exist for these methods, however, including barren plateaus and large numbers of local minima. In this work, we consider the Adaptive, Problem-Tailored Variational Quantum Eiegensolver (ADAPT-VQE) ansätze, and examine how they are impacted by these local minima. We find that while ADAPT-VQE does not remove local minima, the gradient-informed, one-operator-at-a-time circuit construction accomplishes two things: First, it provides an initialization strategy that can yield solutions with over an order of magnitude smaller error compared to random initialization, and which is applicable in situations where chemical intuition cannot help with initialization, i.e., when Hartree-Fock is a poor approximation to the ground state. Second, even if an ADAPT-VQE iteration converges to a local trap at one step, it can still “burrow” toward the exact solution by adding more operators, which preferentially deepens the occupied trap. This same mechanism helps highlight a surprising feature of ADAPT-VQE: It should not suffer optimization problems due to barren plateaus and random initialization. Even if such barren plateaus appear in the parameter landscape, our analysis suggests that ADAPT-VQE avoids such regions by design.
@@ -249,6 +264,7 @@
 - title: An entanglement-based volumetric benchmark for near-term quantum hardware
   date: 2022-09-01
   url: https://arxiv.org/abs/2209.00678
+  image: https://samantha.wiki/images/entanglement.png
   journal: arXiv
   content: |
     We introduce a volumetric benchmark for near-term quantum platforms based on the generation and verification of genuine entanglement across n-qubits using graph states and direct stabilizer measurements. Our benchmark evaluates the robustness of multipartite and bipartite n-qubit entanglement with respect to many sources of hardware noise: qubit decoherence, CNOT and swap gate noise, and readout error. We demonstrate our benchmark on multiple superconducting qubit platforms available from IBM (`ibmq_belem`, `ibmq_toronto`, `ibmq_guadalupe` and `ibmq_jakarta`). Subsets of n<10 qubits are used for graph state preparation and stabilizer measurement. Evaluation of genuine and biseparable entanglement witnesses we report observations of 5 qubit genuine entanglement, but robust multipartite entanglement is difficult to generate for n>4 qubits and identify two-qubit gate noise as strongly correlated with the quality of genuine multipartite entanglement. 
@@ -269,6 +285,7 @@
 - title: When Clifford benchmarks are sufficient; estimating application performance with scalable proxy circuits
   date: 2025-03-07
   url: https://arxiv.org/abs/2503.05943
+  image: https://samantha.wiki/images/clifford-brickwork.png
   journal: arXiv
   content: |
     The goal of benchmarking is to determine how far the output of a noisy system is from its ideal behavior; this becomes exceedingly difficult for large quantum systems where classical simulations become intractable. A common approach is to turn to circuits comprised of elements of the Clifford group (e.g., CZ, CNOT, π and π/2 gates), which probe quantum behavior but are nevertheless efficient to simulate classically. However, there is some concern that these circuits may overlook error sources that impact the larger Hilbert space. In this manuscript, we show that for a broad class of error models these concerns are unwarranted. In particular, we show that, for error models that admit noise tailoring by Pauli twirling, the diamond norm and fidelity of any generic circuit is well approximated by the fidelities of proxy circuits composed only of Clifford gates. We discuss methods for extracting the fidelities of these Clifford proxy circuits in a manner that is robust to errors in state preparation and measurement and demonstrate these methods in simulation and on IBM Quantum's fleet of deployed heron devices.
