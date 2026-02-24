@@ -2,6 +2,7 @@
 title: 'My QR Code Tattoo'
 date: 2024-09-22T01:48:46Z
 draft: false
+image: https://samantha.wiki/images/qr-code.svg
 links:
     - name: API
       icon: fa-brands fa-github

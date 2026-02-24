@@ -2,6 +2,7 @@
 title: 'adwatch'
 date: 2025-01-16T01:29:14Z
 draft: false
+image: https://raw.githubusercontent.com/samanthavbarron/ad-begone/refs/heads/main/logo.svg
 links:
     - name: GitHub
       icon: fa-brands fa-github
