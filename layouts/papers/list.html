@@ -10,8 +10,8 @@
 
   .paper-entry .paper-thumb {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,10 +29,14 @@
     min-width: 0;
   }
 
+  .paper-entry .entry-header h2 {
+    font-size: 19.2px;
+  }
+
   @media screen and (max-width: 768px) {
     .paper-entry .paper-thumb {
-      width: 80px;
-      height: 80px;
+      width: 96px;
+      height: 96px;
     }
   }
 </style>
@@ -82,16 +86,14 @@
         {{- end }}
       </h2>
     </header>
-    {{- if (ne (.Param "hideSummary") true) }}
+    {{- with .Params.authors }}
     <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      <p>{{ delimit . ", " }}</p>
     </div>
     {{- end }}
-    {{- if not (.Param "hideMeta") }}
     <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
+      <span>{{ with .Params.journal }}{{ . }}: {{ end }}{{ .Date.Format "Jan 2, 2006" }}</span>
     </footer>
-    {{- end }}
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
