@@ -36,12 +36,6 @@ menu:
     - name: Uses
       url: uses/
       weight: 4
-    - name: Search
-      url: search/
-      weight: 10
-    - name: Tags
-      url: tags/
-      weight: 10
     - name: Feedback
       url: https://link.samantha.wiki/feedback
       weight: 20
