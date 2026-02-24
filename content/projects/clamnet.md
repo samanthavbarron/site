@@ -1,6 +1,7 @@
 ---
 title: 'ClamNet'
 date: 2024-09-22T01:29:14Z
+summary: The evolution of my homelab through the years.
 draft: false
 image: https://samantha.wiki/images/clamnet_v4.png
 ---
