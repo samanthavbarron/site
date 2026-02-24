@@ -1,0 +1,53 @@
+/* Catppuccin accent colors for nav menu items and social icons */
+
+/* Latte (light mode) */
+:root {
+    --nav-about: rgb(136, 57, 239);     /* Mauve */
+    --nav-cv: rgb(234, 118, 203);       /* Pink */
+    --nav-now: rgb(32, 159, 181);       /* Sapphire */
+    --nav-uses: rgb(64, 160, 43);       /* Green */
+    --nav-search: rgb(254, 100, 11);    /* Peach */
+    --nav-tags: rgb(114, 135, 253);     /* Lavender */
+    --nav-feedback: rgb(221, 120, 120); /* Flamingo */
+
+    --social-github: rgb(114, 135, 253);  /* Lavender */
+    --social-rss: rgb(254, 100, 11);      /* Peach */
+    --social-bluesky: rgb(4, 165, 229);   /* Sky */
+    --social-email: rgb(136, 57, 239);    /* Mauve */
+    --social-scholar: rgb(23, 146, 153);  /* Teal */
+    --social-linkedin: rgb(30, 102, 245); /* Blue */
+}
+
+/* Mocha (dark mode) */
+[data-theme="dark"] {
+    --nav-about: rgb(203, 166, 247);    /* Mauve */
+    --nav-cv: rgb(245, 194, 231);       /* Pink */
+    --nav-now: rgb(116, 199, 236);      /* Sapphire */
+    --nav-uses: rgb(166, 227, 161);     /* Green */
+    --nav-search: rgb(250, 179, 135);   /* Peach */
+    --nav-tags: rgb(180, 190, 254);     /* Lavender */
+    --nav-feedback: rgb(242, 205, 205); /* Flamingo */
+
+    --social-github: rgb(180, 190, 254);  /* Lavender */
+    --social-rss: rgb(250, 179, 135);     /* Peach */
+    --social-bluesky: rgb(137, 220, 235); /* Sky */
+    --social-email: rgb(203, 166, 247);   /* Mauve */
+    --social-scholar: rgb(148, 226, 213); /* Teal */
+    --social-linkedin: rgb(137, 180, 250); /* Blue */
+}
+
+#menu li:nth-child(1) a { color: var(--nav-about); }
+#menu li:nth-child(2) a { color: var(--nav-cv); }
+#menu li:nth-child(3) a { color: var(--nav-now); }
+#menu li:nth-child(4) a { color: var(--nav-uses); }
+#menu li:nth-child(5) a { color: var(--nav-search); }
+#menu li:nth-child(6) a { color: var(--nav-tags); }
+#menu li:nth-child(7) a { color: var(--nav-feedback); }
+
+/* Social icons */
+.social-icons a:nth-child(1) { color: var(--social-github); }  /* GitHub */
+.social-icons a:nth-child(2) { color: var(--social-rss); }     /* RSS */
+.social-icons a:nth-child(3) { color: var(--social-bluesky); }  /* Bluesky */
+.social-icons a:nth-child(4) { color: var(--social-email); }    /* Email */
+.social-icons a:nth-child(5) { color: var(--social-scholar); }  /* Google Scholar */
+.social-icons a:nth-child(6) { color: var(--social-linkedin); } /* LinkedIn */
