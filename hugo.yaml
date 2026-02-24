@@ -47,6 +47,9 @@ menu:
       weight: 20
 
 params:
+  assets:
+    theme_color: "#1e1e2e"
+    msapplication_TileColor: "#1e1e2e"
   profileMode:
     enabled: true
     title: "Hi there!"
