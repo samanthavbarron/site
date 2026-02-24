@@ -1,0 +1,245 @@
+{{- define "main" }}
+
+{{- partial "index_profile.html" . }}
+
+<style>
+  .main .profile {
+    min-height: auto;
+    padding: var(--gap) 0;
+  }
+
+  .home-section {
+    margin-top: var(--gap);
+  }
+
+  .home-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+
+  .home-section .section-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .home-section .section-header h2 a {
+    font-size: inherit;
+    color: inherit;
+  }
+
+  .home-section .section-header a {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  .home-section .section-header a:hover {
+    opacity: 1;
+  }
+
+  /* Paper previews */
+  .home-paper.post-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  .home-paper .paper-thumb {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-paper .paper-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--radius);
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  [data-theme="dark"] .home-paper .paper-thumb img {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+  }
+
+  .home-paper .paper-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .home-paper .entry-header h3 {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  /* Project previews */
+  .home-project.post-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  .home-project .project-thumb {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-project .project-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--radius);
+    object-fit: contain;
+  }
+
+  .home-project .project-details {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .home-project .entry-header h3 {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .home-section .post-entry:nth-child(7n+2) .entry-header h3 { color: var(--nav-about); }
+  .home-section .post-entry:nth-child(7n+3) .entry-header h3 { color: var(--nav-cv); }
+  .home-section .post-entry:nth-child(7n+4) .entry-header h3 { color: var(--nav-now); }
+  .home-section .post-entry:nth-child(7n+5) .entry-header h3 { color: var(--nav-uses); }
+  .home-section .post-entry:nth-child(7n+6) .entry-header h3 { color: var(--nav-search); }
+  .home-section .post-entry:nth-child(7n+7) .entry-header h3 { color: var(--nav-tags); }
+  .home-section .post-entry:nth-child(7n+8) .entry-header h3 { color: var(--nav-feedback); }
+
+  @media screen and (max-width: 768px) {
+    .home-paper .paper-thumb {
+      width: 80px;
+      height: 80px;
+    }
+
+    .home-project .project-thumb {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>
+
+{{/* ---- Papers ---- */}}
+{{- $papersSection := site.GetPage "/papers" }}
+{{- with $papersSection }}
+{{- $papers := (union .RegularPages .Sections) }}
+{{- $papers = (first 3 $papers) }}
+{{- if gt (len $papers) 0 }}
+<div class="home-section">
+  <div class="section-header">
+    <h2><a href="/papers/">Papers</a></h2>
+    <a href="/papers/">View all &rarr;</a>
+  </div>
+  {{- range $papers }}
+  <article class="post-entry home-paper">
+    {{- with .Params.image }}
+    <div class="paper-thumb">
+      <img loading="lazy" src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{- end }}
+    <div class="paper-details">
+      <header class="entry-header">
+        <h3>{{- .Title -}}</h3>
+      </header>
+      {{- with .Params.authors }}
+      <div class="entry-content">
+        <p>{{ delimit . ", " }}</p>
+      </div>
+      {{- end }}
+      <footer class="entry-footer">
+        <span>{{ with .Params.journal }}{{ . }}: {{ end }}{{ .Date.Format "Jan 2, 2006" }}</span>
+      </footer>
+    </div>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{/* ---- Projects ---- */}}
+{{- $projectsSection := site.GetPage "/projects" }}
+{{- with $projectsSection }}
+{{- $projects := (union .RegularPages .Sections) }}
+{{- $projects = (first 3 $projects) }}
+{{- if gt (len $projects) 0 }}
+<div class="home-section">
+  <div class="section-header">
+    <h2><a href="/projects/">Projects</a></h2>
+    <a href="/projects/">View all &rarr;</a>
+  </div>
+  {{- range $projects }}
+  <article class="post-entry home-project">
+    {{- with .Params.image }}
+    <div class="project-thumb">
+      <img loading="lazy" src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{- end }}
+    <div class="project-details">
+      <header class="entry-header">
+        <h3>{{- .Title -}}</h3>
+      </header>
+      {{- if (ne (.Param "hideSummary") true) }}
+      <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      {{- end }}
+      <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+      </footer>
+    </div>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{/* ---- Posts ---- */}}
+{{- $postsSection := site.GetPage "/posts" }}
+{{- with $postsSection }}
+{{- $posts := .RegularPages }}
+{{- $posts = (first 3 $posts) }}
+{{- if gt (len $posts) 0 }}
+<div class="home-section">
+  <div class="section-header">
+    <h2><a href="/posts/">Posts</a></h2>
+    <a href="/posts/">View all &rarr;</a>
+  </div>
+  {{- range $posts }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h3 class="entry-hint-parent">
+        {{- .Title }}
+      </h3>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
