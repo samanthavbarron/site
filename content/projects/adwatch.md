@@ -2,6 +2,10 @@
 title: 'adwatch'
 date: 2025-01-16T01:29:14Z
 draft: false
+links:
+    - name: GitHub
+      icon: fa-brands fa-github
+      url: https://github.com/samanthavbarron/ad-begone
 ---
 
 I hate ads. I especially hate ads when I'm listening to a podcast first thing in the morning.
