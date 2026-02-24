@@ -1,0 +1,28 @@
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    color: var(--primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.project-link-btn:hover {
+    border-color: var(--primary);
+}
+
+.project-link-btn i {
+    font-size: 16px;
+}
