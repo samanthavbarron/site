@@ -1,0 +1,13 @@
+/* Global transparent-white-background effect for all images.
+   Light: multiply blend makes white pixels invisible against the background.
+   Dark: invert + hue-rotate preserves original colors, screen blend makes
+         black (formerly white) pixels invisible. */
+
+img {
+    mix-blend-mode: multiply;
+}
+
+[data-theme="dark"] img {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+}
