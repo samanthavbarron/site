@@ -62,6 +62,8 @@ params:
         url: "/papers"
       - name: Projects
         url: "/projects"
+      - name: Photos
+        url: https://grain.social/profile/did:plc:sna3qx44beg2mb5fao44gsxh
 
   socialIcons:
     - name: github
